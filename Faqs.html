@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FAQ Page</title>
+    <title>FAQs | Car Wash</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="images/x-icon" href="Images/logo.png" />
@@ -25,33 +25,43 @@
 </head>
 <body>
 
+
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+            <a href="#home" class="w3-bar-item w3-button w3-wide"> LOGO </a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                 <a href="./Index.html" target="_self" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-                <a href="./Aboutus.html" target="_self" class="w3-bar-item w3-button"> ABOUT US</a>
+                <a href="./Aboutus.html" target="_self" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT US</a>
                 <a href="./Service.html" target="_self" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICE</a>
                 <a href="./Pricing.html" target="_self" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
                 <a href="./gallary.html" target="_self" class="w3-bar-item w3-button"><i class="fa fa-arrow-up"></i>GALLERY</a>
-                <a href="./Faqs.html" target="_self" class="w3-bar-item w3-button">FAQS</a>
+                <a href="./Faqs.html" target="_self" class="w3-bar-item w3-button">FAQs</a>
                 <a href="./Contact.html" target="_self" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
             </div>
-            <!-- Sidebar on small screens when clicking the menu icon -->
-            <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-                <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-                <a href="./Index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
-                <a href="./Aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
-                <a href="./Service.html" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
-                <a href="./Pricing.html" onclick="w3_close()" class="w3-bar-item w3-button"> PRICING</a>
-                <a href="./Contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
-            </nav>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="./Index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="./Service.html" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
+        <a href="./Pricing.html" onclick="w3_close()" class="w3-bar-item w3-button"> PRICING</a>
+        <a href="./gallary.html" onclick="w3_close()" class="w3-bar-item w3-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="w3_close()" class="w3-bar-item w3-button"> FAQs</a>
+        <a href="./Contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
+    </nav>
+
+
+
     <!-- Faq Section -->
     <div class="w3-container" style="padding:128px 16px" id="faq">
 
