@@ -117,7 +117,7 @@ body, html {
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -133,7 +133,7 @@ body, html {
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -149,7 +149,7 @@ body, html {
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -241,14 +241,13 @@ body, html {
         // Get the modal
         var modal = document.getElementById("myModal");
         
-        // Get the button that opens the modal
-        var btn = document.getElementById("btnsignup");
-
+        
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal
-        btn.onclick = function () {
+        function btn_click() {
+        
             modal.style.display = "block";
         }
 
