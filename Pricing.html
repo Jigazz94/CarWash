@@ -113,11 +113,11 @@ body, html {
                     <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
                     <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
                     <li class="car-padding-16">
-                        <h2 class="car-wide">$ 10</h2>
+                        <h2 class="car-wide">&#163; 10</h2>
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Make Appointment</button>
                     </li>
                 </ul>
             </div>
@@ -129,11 +129,11 @@ body, html {
                     <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
                     <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
                     <li class="car-padding-16">
-                        <h2 class="car-wide">$ 25</h2>
+                        <h2 class="car-wide">&#163; 25</h2>
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Make Appointment</button>
                     </li>
                 </ul>
             </div>
@@ -145,11 +145,11 @@ body, html {
                     <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
                     <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
                     <li class="car-padding-16">
-                        <h2 class="car-wide">$ 50</h2>
+                        <h2 class="car-wide">&#163; 50</h2>
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Make Appointment</button>
                     </li>
                 </ul>
             </div>
@@ -261,6 +261,23 @@ body, html {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
         }
     </script>
 
