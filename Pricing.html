@@ -19,6 +19,46 @@ body, html {
 .car-bar .car-button {
   padding: 16px;
 }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
 </style>
 </head>
 <body>
@@ -77,7 +117,7 @@ body, html {
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button class="car-button car-black car-padding-large">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -93,7 +133,7 @@ body, html {
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button class="car-button car-black car-padding-large">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -109,7 +149,7 @@ body, html {
                         <span class="car-opacity">per month</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
-                        <button class="car-button car-black car-padding-large">Sign Up</button>
+                        <button id="btnsignup" class="car-button car-black car-padding-large">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -177,30 +217,51 @@ body, html {
 
     </footer>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <strong>Book Your Appointment</strong>
+            <span class="close">&times;</span>
+            <form target="_blank">
+                <p><input class="car-input car-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="car-input car-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="car-input car-border" type="text" placeholder="Date" required name="Date"></p>
+                <p><input class="car-input car-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="car-button car-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> Book Appointment
+                    </button>
+                </p>
+            </form>
+        </div>
+    </div>
+
     <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("btnsignup");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
         }
 
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
-
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-            } else {
-                mySidebar.style.display = 'block';
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-        }
-
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
         }
     </script>
 
