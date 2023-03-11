@@ -1887,13 +1887,14 @@ q_testi {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-    background-color: #F9F9F9;
+    color:#fff;
+    background-color: #ff3131;
 }
 
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
     padding: 0 18px;
-    background-color: white;
+    background-color: #fff;
     display: none;
     overflow: hidden;
 }
