@@ -3,9 +3,12 @@ html {
     box-sizing: border-box
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit
 }
+
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
     -ms-text-size-adjust: 100%;
@@ -16,7 +19,17 @@ body {
     margin: 0
 }
 
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
     display: block
 }
 
@@ -24,7 +37,10 @@ summary {
     display: list-item
 }
 
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
     display: inline-block
 }
 
@@ -37,7 +53,8 @@ audio:not([controls]) {
     height: 0
 }
 
-[hidden], template {
+[hidden],
+template {
     display: none
 }
 
@@ -45,9 +62,10 @@ a {
     background-color: transparent
 }
 
-    a:active, a:hover {
-        outline-width: 0
-    }
+a:active,
+a:hover {
+    outline-width: 0
+}
 
 abbr[title] {
     border-bottom: none;
@@ -55,7 +73,8 @@ abbr[title] {
     text-decoration: underline dotted
 }
 
-b, strong {
+b,
+strong {
     font-weight: bolder
 }
 
@@ -72,7 +91,8 @@ small {
     font-size: 80%
 }
 
-sub, sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -92,11 +112,14 @@ figure {
 }
 
 img {
-    border-style: none
+    border-style: none;
 }
 
-code, kbd, pre, samp {
-    font-family: monospace,monospace;
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
     font-size: 1em
 }
 
@@ -106,7 +129,11 @@ hr {
     overflow: visible
 }
 
-button, input, select, textarea, optgroup {
+button,
+input,
+select,
+textarea,
+optgroup {
     font: inherit;
     margin: 0
 }
@@ -115,26 +142,37 @@ optgroup {
     font-weight: bold
 }
 
-button, input {
+button,
+input {
     overflow: visible
 }
 
-button, select {
+button,
+select {
     text-transform: none
 }
 
-button, [type=button], [type=reset], [type=submit] {
+button,
+[type=button],
+[type=reset],
+[type=submit] {
     -webkit-appearance: button
 }
 
-    button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
-        border-style: none;
-        padding: 0
-    }
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
 
-    button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
-        outline: 1px dotted ButtonText
-    }
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
 
 fieldset {
     border: 1px solid #c0c0c0;
@@ -154,11 +192,13 @@ textarea {
     overflow: auto
 }
 
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
     padding: 0
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
     height: auto
 }
 
@@ -167,17 +207,19 @@ textarea {
     outline-offset: -2px
 }
 
-    [type=search]::-webkit-search-decoration {
-        -webkit-appearance: none
-    }
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit
 }
+
 /* End extract */
-html, body {
-    font-family: Verdana,sans-serif;
+html,
+body {
+    font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5
 }
@@ -226,8 +268,13 @@ h6 {
     font-family: monospace
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Segoe UI",Arial,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
     margin: 10px 0
 }
@@ -255,7 +302,12 @@ a {
     color: inherit
 }
 
+<<<<<<< Updated upstream
 .w3-table, .w3-table-all {
+=======
+.car-table,
+.car-table-all {
+>>>>>>> Stashed changes
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
@@ -266,9 +318,16 @@ a {
     border: 1px solid #ccc
 }
 
+<<<<<<< Updated upstream
     .w3-bordered tr, .w3-table-all tr {
         border-bottom: 1px solid #ddd
     }
+=======
+.car-bordered tr,
+.car-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+>>>>>>> Stashed changes
 
 .w3-striped tbody tr:nth-child(even) {
     background-color: #f1f1f1
@@ -282,6 +341,7 @@ a {
     background-color: #f1f1f1
 }
 
+<<<<<<< Updated upstream
 .w3-hoverable tbody tr:hover, .w3-ul.w3-hoverable li:hover {
     background-color: #ccc
 }
@@ -291,17 +351,45 @@ a {
 }
 
 .w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th {
+=======
+.car-hoverable tbody tr:hover,
+.car-ul.car-hoverable li:hover {
+    background-color: #ccc
+}
+
+.car-centered tr th,
+.car-centered tr td {
+    text-align: center
+}
+
+.car-table td,
+.car-table th,
+.car-table-all td,
+.car-table-all th {
+>>>>>>> Stashed changes
     padding: 8px 8px;
     display: table-cell;
     text-align: left;
     vertical-align: top
 }
 
+<<<<<<< Updated upstream
     .w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child {
         padding-left: 16px
     }
 
 .w3-btn, .w3-button {
+=======
+.car-table th:first-child,
+.car-table td:first-child,
+.car-table-all th:first-child,
+.car-table-all td:first-child {
+    padding-left: 16px
+}
+
+.car-btn,
+.car-button {
+>>>>>>> Stashed changes
     border: none;
     display: inline-block;
     padding: 8px 16px;
@@ -315,11 +403,20 @@ a {
     white-space: nowrap
 }
 
+<<<<<<< Updated upstream
     .w3-btn:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
     }
 
 .w3-btn, .w3-button {
+=======
+.car-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.car-btn,
+.car-button {
+>>>>>>> Stashed changes
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -328,6 +425,7 @@ a {
     user-select: none
 }
 
+<<<<<<< Updated upstream
     .w3-disabled, .w3-btn:disabled, .w3-button:disabled {
         cursor: not-allowed;
         opacity: 0.3
@@ -342,6 +440,27 @@ a {
         }
 
 .w3-badge, .w3-tag {
+=======
+.car-disabled,
+.car-btn:disabled,
+.car-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.car-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.car-btn.car-disabled:hover,
+.car-btn:disabled:hover {
+    box-shadow: none
+}
+
+.car-badge,
+.car-tag {
+>>>>>>> Stashed changes
     background-color: #000;
     color: #fff;
     display: inline-block;
@@ -360,6 +479,7 @@ a {
     margin: 0
 }
 
+<<<<<<< Updated upstream
     .w3-ul li {
         padding: 8px 16px;
         border-bottom: 1px solid #ddd
@@ -380,6 +500,29 @@ a {
     .w3-tooltip:hover .w3-text {
         display: inline-block
     }
+=======
+.car-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.car-ul li:last-child {
+    border-bottom: none
+}
+
+.car-tooltip,
+.car-display-container {
+    position: relative
+}
+
+.car-tooltip .car-text {
+    display: none
+}
+
+.car-tooltip:hover .car-text {
+    display: inline-block
+}
+>>>>>>> Stashed changes
 
 .w3-ripple:active {
     opacity: 0.5
@@ -404,12 +547,18 @@ a {
     border-bottom: 1px solid #ccc
 }
 
+<<<<<<< Updated upstream
 .w3-dropdown-click, .w3-dropdown-hover {
+=======
+.car-dropdown-click,
+.car-dropdown-hover {
+>>>>>>> Stashed changes
     position: relative;
     display: inline-block;
     cursor: pointer
 }
 
+<<<<<<< Updated upstream
     .w3-dropdown-hover:hover .w3-dropdown-content {
         display: block
     }
@@ -423,6 +572,23 @@ a {
             background-color: #ccc;
             color: #000
         }
+=======
+.car-dropdown-hover:hover .car-dropdown-content {
+    display: block
+}
+
+.car-dropdown-hover:first-child,
+.car-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.car-dropdown-hover:hover>.car-button:first-child,
+.car-dropdown-click:hover>.car-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+>>>>>>> Stashed changes
 
 .w3-dropdown-content {
     cursor: auto;
@@ -436,7 +602,12 @@ a {
     z-index: 1
 }
 
+<<<<<<< Updated upstream
 .w3-check, .w3-radio {
+=======
+.car-check,
+.car-radio {
+>>>>>>> Stashed changes
     width: 24px;
     height: 24px;
     position: relative;
@@ -452,6 +623,7 @@ a {
     overflow: auto
 }
 
+<<<<<<< Updated upstream
 .w3-bar-block .w3-dropdown-hover, .w3-bar-block .w3-dropdown-click {
     width: 100%
 }
@@ -467,6 +639,27 @@ a {
     }
 
 .w3-main, #main {
+=======
+.car-bar-block .car-dropdown-hover,
+.car-bar-block .car-dropdown-click {
+    width: 100%
+}
+
+.car-bar-block .car-dropdown-hover .car-dropdown-content,
+.car-bar-block .car-dropdown-click .car-dropdown-content {
+    min-width: 100%
+}
+
+.car-bar-block .car-dropdown-hover .car-button,
+.car-bar-block .car-dropdown-click .car-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.car-main,
+#main {
+>>>>>>> Stashed changes
     transition: margin-left .4s
 }
 
@@ -480,8 +673,8 @@ a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4)
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
 }
 
 .w3-modal-content {
@@ -512,7 +705,12 @@ a {
     outline: 0
 }
 
+<<<<<<< Updated upstream
 .w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click {
+=======
+.car-bar .car-dropdown-hover,
+.car-bar .car-dropdown-click {
+>>>>>>> Stashed changes
     position: static;
     float: left
 }
@@ -546,18 +744,45 @@ a {
     overflow-x: auto
 }
 
+<<<<<<< Updated upstream
 .w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before,
 .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+=======
+.car-container:after,
+.car-container:before,
+.car-panel:after,
+.car-panel:before,
+.car-row:after,
+.car-row:before,
+.car-row-padding:after,
+.car-row-padding:before,
+.car-cell-row:before,
+.car-cell-row:after,
+.car-clear:after,
+.car-clear:before,
+.car-bar:before,
+.car-bar:after {
+>>>>>>> Stashed changes
     content: "";
     display: table;
     clear: both
 }
 
+<<<<<<< Updated upstream
 .w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+=======
+.car-col,
+.car-half,
+.car-third,
+.car-twothird,
+.car-threequarter,
+.car-quarter {
+>>>>>>> Stashed changes
     float: left;
     width: 100%
 }
 
+<<<<<<< Updated upstream
     .w3-col.s1 {
         width: 8.33333%
     }
@@ -605,6 +830,55 @@ a {
     .w3-col.s12 {
         width: 99.99999%
     }
+=======
+.car-col.s1 {
+    width: 8.33333%
+}
+
+.car-col.s2 {
+    width: 16.66666%
+}
+
+.car-col.s3 {
+    width: 24.99999%
+}
+
+.car-col.s4 {
+    width: 33.33333%
+}
+
+.car-col.s5 {
+    width: 41.66666%
+}
+
+.car-col.s6 {
+    width: 49.99999%
+}
+
+.car-col.s7 {
+    width: 58.33333%
+}
+
+.car-col.s8 {
+    width: 66.66666%
+}
+
+.car-col.s9 {
+    width: 74.99999%
+}
+
+.car-col.s10 {
+    width: 83.33333%
+}
+
+.car-col.s11 {
+    width: 91.66666%
+}
+
+.car-col.s12 {
+    width: 99.99999%
+}
+>>>>>>> Stashed changes
 
 @media (min-width:601px) {
     .w3-col.m1 {
@@ -615,11 +889,21 @@ a {
         width: 16.66666%
     }
 
+<<<<<<< Updated upstream
     .w3-col.m3, .w3-quarter {
         width: 24.99999%
     }
 
     .w3-col.m4, .w3-third {
+=======
+    .car-col.m3,
+    .car-quarter {
+        width: 24.99999%
+    }
+
+    .car-col.m4,
+    .car-third {
+>>>>>>> Stashed changes
         width: 33.33333%
     }
 
@@ -627,7 +911,12 @@ a {
         width: 41.66666%
     }
 
+<<<<<<< Updated upstream
     .w3-col.m6, .w3-half {
+=======
+    .car-col.m6,
+    .car-half {
+>>>>>>> Stashed changes
         width: 49.99999%
     }
 
@@ -635,11 +924,21 @@ a {
         width: 58.33333%
     }
 
+<<<<<<< Updated upstream
     .w3-col.m8, .w3-twothird {
         width: 66.66666%
     }
 
     .w3-col.m9, .w3-threequarter {
+=======
+    .car-col.m8,
+    .car-twothird {
+        width: 66.66666%
+    }
+
+    .car-col.m9,
+    .car-threequarter {
+>>>>>>> Stashed changes
         width: 74.99999%
     }
 
@@ -715,7 +1014,12 @@ a {
     margin-right: -16px
 }
 
+<<<<<<< Updated upstream
 .w3-content, .w3-auto {
+=======
+.car-content,
+.car-auto {
+>>>>>>> Stashed changes
     margin-left: auto;
     margin-right: auto
 }
@@ -753,7 +1057,12 @@ a {
     display: none !important
 }
 
+<<<<<<< Updated upstream
 .w3-show-block, .w3-show {
+=======
+.car-show-block,
+.car-show {
+>>>>>>> Stashed changes
     display: block !important
 }
 
@@ -777,7 +1086,12 @@ a {
         padding-top: 30px
     }
 
+<<<<<<< Updated upstream
     .w3-dropdown-hover.w3-mobile .w3-dropdown-content, .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+=======
+    .car-dropdown-hover.car-mobile .car-dropdown-content,
+    .car-dropdown-click.car-mobile .car-dropdown-content {
+>>>>>>> Stashed changes
         position: relative
     }
 
@@ -790,6 +1104,7 @@ a {
         width: 100% !important
     }
 
+<<<<<<< Updated upstream
     .w3-bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile {
         text-align: center
     }
@@ -797,6 +1112,22 @@ a {
         .w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button {
             width: 100%
         }
+=======
+    .car-bar-item.car-mobile,
+    .car-dropdown-hover.car-mobile,
+    .car-dropdown-click.car-mobile {
+        text-align: center
+    }
+
+    .car-dropdown-hover.car-mobile,
+    .car-dropdown-hover.car-mobile .car-btn,
+    .car-dropdown-hover.car-mobile .car-button,
+    .car-dropdown-click.car-mobile,
+    .car-dropdown-click.car-mobile .car-btn,
+    .car-dropdown-click.car-mobile .car-button {
+        width: 100%
+    }
+>>>>>>> Stashed changes
 }
 
 @media (max-width:768px) {
@@ -844,7 +1175,12 @@ a {
     }
 }
 
+<<<<<<< Updated upstream
 .w3-top, .w3-bottom {
+=======
+.car-top,
+.car-bottom {
+>>>>>>> Stashed changes
     position: fixed;
     width: 100%;
     z-index: 1
@@ -867,7 +1203,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2
 }
 
@@ -899,40 +1235,40 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
 }
 
 .w3-display-left {
     position: absolute;
     top: 50%;
     left: 0%;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(-0%,-50%)
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
 }
 
 .w3-display-right {
     position: absolute;
     top: 50%;
     right: 0%;
-    transform: translate(0%,-50%);
-    -ms-transform: translate(0%,-50%)
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
 }
 
 .w3-display-topmiddle {
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%)
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
 }
 
 .w3-display-bottommiddle {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%)
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
 }
 
 .w3-display-container:hover .w3-display-hover {
@@ -959,7 +1295,12 @@ a {
     border-radius: 2px
 }
 
+<<<<<<< Updated upstream
 .w3-round, .w3-round-medium {
+=======
+.car-round,
+.car-round-medium {
+>>>>>>> Stashed changes
     border-radius: 4px
 }
 
@@ -975,11 +1316,26 @@ a {
     border-radius: 32px
 }
 
+<<<<<<< Updated upstream
 .w3-row-padding, .w3-row-padding > .w3-half, .w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-threequarter, .w3-row-padding > .w3-quarter, .w3-row-padding > .w3-col {
     padding: 0 8px
 }
 
 .w3-container, .w3-panel {
+=======
+.car-row-padding,
+.car-row-padding>.car-half,
+.car-row-padding>.car-third,
+.car-row-padding>.car-twothird,
+.car-row-padding>.car-threequarter,
+.car-row-padding>.car-quarter,
+.car-row-padding>.car-col {
+    padding: 0 8px
+}
+
+.car-container,
+.car-panel {
+>>>>>>> Stashed changes
     padding: 0.01em 16px
 }
 
@@ -988,8 +1344,14 @@ a {
     margin-bottom: 16px
 }
 
+<<<<<<< Updated upstream
 .w3-code, .w3-codespan {
     font-family: Consolas,"courier new";
+=======
+.car-code,
+.car-codespan {
+    font-family: Consolas, "courier new";
+>>>>>>> Stashed changes
     font-size: 16px
 }
 
@@ -1009,12 +1371,23 @@ a {
     font-size: 110%
 }
 
+<<<<<<< Updated upstream
 .w3-card, .w3-card-2 {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 }
 
 .w3-card-4, .w3-hover-shadow:hover {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+=======
+.car-card,
+.car-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.car-card-4,
+.car-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+>>>>>>> Stashed changes
 }
 
 .w3-spin {
@@ -1149,6 +1522,7 @@ a {
     transition: width 0.4s ease-in-out
 }
 
+<<<<<<< Updated upstream
     .w3-animate-input:focus {
         width: 100% !important
     }
@@ -1158,6 +1532,19 @@ a {
 }
 
 .w3-opacity-off, .w3-hover-opacity-off:hover {
+=======
+.car-animate-input:focus {
+    width: 100% !important
+}
+
+.car-opacity,
+.car-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.car-opacity-off,
+.car-hover-opacity-off:hover {
+>>>>>>> Stashed changes
     opacity: 1
 }
 
@@ -1169,6 +1556,7 @@ a {
     opacity: 0.75
 }
 
+<<<<<<< Updated upstream
 .w3-greyscale-max, .w3-grayscale-max, .w3-hover-greyscale:hover, .w3-hover-grayscale:hover {
     filter: grayscale(100%)
 }
@@ -1178,6 +1566,22 @@ a {
 }
 
 .w3-greyscale-min, .w3-grayscale-min {
+=======
+.car-greyscale-max,
+.car-grayscale-max,
+.car-hover-greyscale:hover,
+.car-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.car-greyscale,
+.car-grayscale {
+    filter: grayscale(75%)
+}
+
+.car-greyscale-min,
+.car-grayscale-min {
+>>>>>>> Stashed changes
     filter: grayscale(50%)
 }
 
@@ -1185,7 +1589,12 @@ a {
     filter: sepia(75%)
 }
 
+<<<<<<< Updated upstream
 .w3-sepia-max, .w3-hover-sepia:hover {
+=======
+.car-sepia-max,
+.car-hover-sepia:hover {
+>>>>>>> Stashed changes
     filter: sepia(100%)
 }
 
@@ -1281,7 +1690,12 @@ a {
     border-right: 6px solid #ccc !important
 }
 
+<<<<<<< Updated upstream
 .w3-section, .w3-code {
+=======
+.car-section,
+.car-code {
+>>>>>>> Stashed changes
     margin-top: 16px !important;
     margin-bottom: 16px !important
 }
@@ -1302,7 +1716,15 @@ a {
     margin-left: 16px !important
 }
 
+<<<<<<< Updated upstream
 .w3-margin-right {
+=======
+.car-margin-left-large {
+    margin-left: 30px !important
+}
+
+.car-margin-right {
+>>>>>>> Stashed changes
     margin-right: 16px !important
 }
 
@@ -1317,6 +1739,13 @@ a {
 .w3-padding-large {
     padding: 12px 24px !important
 }
+<<<<<<< Updated upstream
+=======
+
+.car-padding-extralarge {
+    padding: 0px 60px !important
+}
+>>>>>>> Stashed changes
 
 .w3-padding-16 {
     padding-top: 16px !important;
@@ -1363,7 +1792,11 @@ a {
     float: left !important
 }
 
+<<<<<<< Updated upstream
 .w3-right {
+=======
+.car-right {
+>>>>>>> Stashed changes
     float: right !important
 }
 
@@ -1372,164 +1805,329 @@ a {
     background-color: #ff3131 !important
 }
 
+<<<<<<< Updated upstream
 .w3-transparent, .w3-hover-none:hover {
+=======
+.car-transparent,
+.car-hover-none:hover {
+>>>>>>> Stashed changes
     background-color: transparent !important
 }
 
 .w3-hover-none:hover {
     box-shadow: none !important
 }
+
 /* Colors */
+<<<<<<< Updated upstream
 .w3-amber, .w3-hover-amber:hover {
+=======
+.car-amber,
+.car-hover-amber:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ffc107 !important
 }
 
+<<<<<<< Updated upstream
 .w3-aqua, .w3-hover-aqua:hover {
+=======
+.car-aqua,
+.car-hover-aqua:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #00ffff !important
 }
 
+<<<<<<< Updated upstream
 .w3-blue, .w3-hover-blue:hover {
+=======
+.car-blue,
+.car-hover-blue:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #2196F3 !important
 }
 
+<<<<<<< Updated upstream
 .w3-light-blue, .w3-hover-light-blue:hover {
+=======
+.car-light-blue,
+.car-hover-light-blue:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #87CEEB !important
 }
 
+<<<<<<< Updated upstream
 .w3-brown, .w3-hover-brown:hover {
+=======
+.car-brown,
+.car-hover-brown:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #795548 !important
 }
 
+<<<<<<< Updated upstream
 .w3-cyan, .w3-hover-cyan:hover {
+=======
+.car-cyan,
+.car-hover-cyan:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #00bcd4 !important
 }
 
+<<<<<<< Updated upstream
 .w3-blue-grey, .w3-hover-blue-grey:hover, .w3-blue-gray, .w3-hover-blue-gray:hover {
+=======
+.car-blue-grey,
+.car-hover-blue-grey:hover,
+.car-blue-gray,
+.car-hover-blue-gray:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #607d8b !important
 }
 
+<<<<<<< Updated upstream
 .w3-green, .w3-hover-green:hover {
+=======
+.car-green,
+.car-hover-green:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #4CAF50 !important
 }
 
+<<<<<<< Updated upstream
 .w3-light-green, .w3-hover-light-green:hover {
+=======
+.car-light-green,
+.car-hover-light-green:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #8bc34a !important
 }
 
+<<<<<<< Updated upstream
 .w3-indigo, .w3-hover-indigo:hover {
+=======
+.car-indigo,
+.car-hover-indigo:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #3f51b5 !important
 }
 
+<<<<<<< Updated upstream
 .w3-khaki, .w3-hover-khaki:hover {
+=======
+.car-khaki,
+.car-hover-khaki:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #f0e68c !important
 }
 
+<<<<<<< Updated upstream
 .w3-lime, .w3-hover-lime:hover {
+=======
+.car-lime,
+.car-hover-lime:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #cddc39 !important
 }
 
+<<<<<<< Updated upstream
 .w3-orange, .w3-hover-orange:hover {
+=======
+.car-orange,
+.car-hover-orange:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ff9800 !important
 }
 
+<<<<<<< Updated upstream
 .w3-deep-orange, .w3-hover-deep-orange:hover {
+=======
+.car-deep-orange,
+.car-hover-deep-orange:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #ff5722 !important
 }
 
+<<<<<<< Updated upstream
 .w3-pink, .w3-hover-pink:hover {
+=======
+.car-pink,
+.car-hover-pink:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #e91e63 !important
 }
 
+<<<<<<< Updated upstream
 .w3-purple, .w3-hover-purple:hover {
+=======
+.car-purple,
+.car-hover-purple:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #9c27b0 !important
 }
 
+<<<<<<< Updated upstream
 .w3-deep-purple, .w3-hover-deep-purple:hover {
+=======
+.car-deep-purple,
+.car-hover-deep-purple:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #673ab7 !important
 }
 
+<<<<<<< Updated upstream
 .w3-red, .w3-hover-red:hover {
+=======
+.car-red,
+.car-hover-red:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #f44336 !important
 }
 
+<<<<<<< Updated upstream
 .w3-sand, .w3-hover-sand:hover {
+=======
+.car-sand,
+.car-hover-sand:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #fdf5e6 !important
 }
 
+<<<<<<< Updated upstream
 .w3-teal, .w3-hover-teal:hover {
+=======
+.car-teal,
+.car-hover-teal:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #009688 !important
 }
 
+<<<<<<< Updated upstream
 .w3-yellow, .w3-hover-yellow:hover {
+=======
+.car-yellow,
+.car-hover-yellow:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ffeb3b !important
 }
 
+<<<<<<< Updated upstream
 .w3-white, .w3-hover-white:hover {
+=======
+.car-white,
+.car-hover-white:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #fff !important
 }
 
+<<<<<<< Updated upstream
 .w3-black, .w3-hover-black:hover {
+=======
+.car-black,
+.car-hover-black:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #000 !important
 }
 
+<<<<<<< Updated upstream
 .w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover {
+=======
+.car-grey,
+.car-hover-grey:hover,
+.car-gray,
+.car-hover-gray:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #9e9e9e !important
 }
 
+<<<<<<< Updated upstream
 .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+=======
+.car-light-grey,
+.car-hover-light-grey:hover,
+.car-light-gray,
+.car-hover-light-gray:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #f1f1f1 !important
 }
 
+<<<<<<< Updated upstream
 .w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover {
+=======
+.car-dark-grey,
+.car-hover-dark-grey:hover,
+.car-dark-gray,
+.car-hover-dark-gray:hover {
+>>>>>>> Stashed changes
     color: #fff !important;
     background-color: #616161 !important
 }
 
+<<<<<<< Updated upstream
 .w3-pale-red, .w3-hover-pale-red:hover {
+=======
+.car-pale-red,
+.car-hover-pale-red:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ffdddd !important
 }
 
+<<<<<<< Updated upstream
 .w3-pale-green, .w3-hover-pale-green:hover {
+=======
+.car-pale-green,
+.car-hover-pale-green:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ddffdd !important
 }
 
+<<<<<<< Updated upstream
 .w3-pale-yellow, .w3-hover-pale-yellow:hover {
+=======
+.car-pale-yellow,
+.car-hover-pale-yellow:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ffffcc !important
 }
 
+<<<<<<< Updated upstream
 .w3-pale-blue, .w3-hover-pale-blue:hover {
+=======
+.car-pale-blue,
+.car-hover-pale-blue:hover {
+>>>>>>> Stashed changes
     color: #000 !important;
     background-color: #ddffff !important
 }
 
+<<<<<<< Updated upstream
 .w3-text-amber, .w3-hover-text-amber:hover {
     color: #ffc107 !important
 }
@@ -1754,6 +2352,389 @@ a {
     border-color: #e7ffff !important
 }
 
+=======
+.car-text-amber,
+.car-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.car-text-aqua,
+.car-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.car-text-blue,
+.car-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.car-text-light-blue,
+.car-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.car-text-brown,
+.car-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.car-text-cyan,
+.car-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.car-text-blue-grey,
+.car-hover-text-blue-grey:hover,
+.car-text-blue-gray,
+.car-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.car-text-green,
+.car-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.car-text-light-green,
+.car-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.car-text-indigo,
+.car-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.car-text-khaki,
+.car-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.car-text-lime,
+.car-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.car-text-orange,
+.car-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.car-text-deep-orange,
+.car-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.car-text-pink,
+.car-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.car-text-purple,
+.car-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.car-text-deep-purple,
+.car-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.car-text-red,
+.car-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.car-text-sand,
+.car-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.car-text-teal,
+.car-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.car-text-yellow,
+.car-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.car-text-white,
+.car-hover-text-white:hover {
+    color: #fff !important
+}
+
+.car-text-black,
+.car-hover-text-black:hover {
+    color: #000 !important
+}
+
+.car-text-grey,
+.car-hover-text-grey:hover,
+.car-text-gray,
+.car-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.car-text-light-grey,
+.car-hover-text-light-grey:hover,
+.car-text-light-gray,
+.car-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+}
+
+.car-text-dark-grey,
+.car-hover-text-dark-grey:hover,
+.car-text-dark-gray,
+.car-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.car-border-amber,
+.car-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.car-border-aqua,
+.car-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.car-border-blue,
+.car-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.car-border-light-blue,
+.car-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.car-border-brown,
+.car-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.car-border-cyan,
+.car-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.car-border-blue-grey,
+.car-hover-border-blue-grey:hover,
+.car-border-blue-gray,
+.car-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.car-border-green,
+.car-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.car-border-light-green,
+.car-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.car-border-indigo,
+.car-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.car-border-khaki,
+.car-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.car-border-lime,
+.car-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.car-border-orange,
+.car-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.car-border-deep-orange,
+.car-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.car-border-pink,
+.car-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.car-border-purple,
+.car-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.car-border-deep-purple,
+.car-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.car-border-red,
+.car-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.car-border-sand,
+.car-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.car-border-teal,
+.car-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.car-border-yellow,
+.car-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.car-border-white,
+.car-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.car-border-black,
+.car-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.car-border-grey,
+.car-hover-border-grey:hover,
+.car-border-gray,
+.car-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.car-border-light-grey,
+.car-hover-border-light-grey:hover,
+.car-border-light-gray,
+.car-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.car-border-dark-grey,
+.car-hover-border-dark-grey:hover,
+.car-border-dark-gray,
+.car-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.car-border-pale-red,
+.car-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.car-border-pale-green,
+.car-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.car-border-pale-yellow,
+.car-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.car-border-pale-blue,
+.car-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+}
+
+
+/*Testimonial section css start*/
+/* Slideshow container */
+.slideshow-container_testi {
+    position: relative;
+    /* background: #f1f1f1f1;*/
+}
+
+/* Slides */
+.mySlides_testi {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev_testi,
+.next_testi {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next_testi {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev_testi:hover,
+.next_testi:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container_testi {
+    text-align: center;
+    padding: 20px;
+    /* background: #ddd;*/
+}
+
+/* The dots/bullets/indicators */
+.dot_testi {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active_testi,
+.dot_testi:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q_testi {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author_testi {
+    color: #ff3131;
+    font-style: italic;
+}
+
+/*Testinnial section css end*/
+
+
+
+>>>>>>> Stashed changes
 /*FAQ Page Css Start*/
 
 .faq-heading {
@@ -1771,6 +2752,7 @@ a {
     width: 60%;
     margin: auto;
 }
+
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
     /* background-color: #eee; */
@@ -1795,7 +2777,12 @@ a {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
+<<<<<<< Updated upstream
     background-color: #F9F9F9;
+=======
+    color: #fff;
+    background-color: #ff3131;
+>>>>>>> Stashed changes
 }
 
 /* Style the faq-page panel. Note: hidden by default */
@@ -1819,6 +2806,7 @@ a {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+
 /*Faq css End*/
 
 /*Servie Css Start*/
@@ -1865,18 +2853,18 @@ a {
     background-position: 0 100%;
 }
 
-    .card:hover .icon-wrapper {
-        background-color: #ffffff;
-        color: #ff3131;
-    }
+.card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #ff3131;
+}
 
-    .card:hover h3 {
-        color: #ffffff;
-    }
+.card:hover h3 {
+    color: #ffffff;
+}
 
-    .card:hover p {
-        color: #f0f0f0;
-    }
+.card:hover p {
+    color: #f0f0f0;
+}
 
 @media screen and (min-width: 768px) {
     .service-card {
@@ -1899,4 +2887,19 @@ a {
         max-width: 33.33%;
     }
 }
+
 /*Service css end*/
+<<<<<<< Updated upstream
+=======
+
+@media only screen and (max-width: 767px) {
+    .faq-page {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .faq-body {
+        width: 90%;
+    }
+}
+>>>>>>> Stashed changes

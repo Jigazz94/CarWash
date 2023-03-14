@@ -19,12 +19,56 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+<<<<<<< Updated upstream
+=======
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+>>>>>>> Stashed changes
 </style>
 </head>
 <body>
 
 
     <!-- Navbar (sit on top) -->
+<<<<<<< Updated upstream
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
             <a href="#home" class="w3-bar-item w3-button w3-wide"> LOGO </a>
@@ -41,12 +85,31 @@ body, html {
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+=======
+    <div class="car-top">
+        <div class="car-bar car-white car-card" id="myNavbar">
+            <a href="#home" class="car-bar-item car-button car-wide"> LOGO </a>
+            <!-- Right-sided navbar links -->
+            <div class="car-right car-hide-small">
+                <a href="./Index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user"></i> ABOUT US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-th"></i> SERVICE</a>
+                <a href="./Pricing.html" target="_self" class="car-bar-item car-button"> PRICING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-arrow-up"></i>GALLERY</a>
+                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i>FAQs</a>
+                <a href="./Contact.html" target="_self" class="car-bar-item car-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="w3_open()">
+>>>>>>> Stashed changes
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
+<<<<<<< Updated upstream
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
         <a href="./Index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
@@ -56,11 +119,23 @@ body, html {
         <a href="./Gallery.html" onclick="w3_close()" class="w3-bar-item w3-button"> GALLERY</a>
         <a href="./Faqs.html" onclick="w3_close()" class="w3-bar-item w3-button"> FAQs</a>
         <a href="./Contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
+=======
+    <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+        <a href="./Index.html" onclick="w3_close()" class="car-bar-item car-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="w3_close()" class="car-bar-item car-button">ABOUT US</a>
+        <a href="./Service.html" onclick="w3_close()" class="car-bar-item car-button"> SERVICE</a>
+        <a href="./Pricing.html" onclick="w3_close()" class="car-bar-item car-button"> PRICING</a>
+        <a href="./Gallery.html" onclick="w3_close()" class="car-bar-item car-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="w3_close()" class="car-bar-item car-button"> FAQs</a>
+        <a href="./Contact.html" onclick="w3_close()" class="car-bar-item car-button"> CONTACT</a>
+>>>>>>> Stashed changes
     </nav>
 
 
 
     <!-- Pricing Section -->
+<<<<<<< Updated upstream
     <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
         <h3>PRICING</h3>
         <p class="w3-large">Choose a pricing plan that fits your needs.</p>
@@ -110,6 +185,57 @@ body, html {
                     </li>
                     <li class="w3-light-grey w3-padding-24">
                         <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+=======
+    <div class="car-container car-center car-dark-grey" style="padding:128px 16px" id="pricing">
+        <h3>PRICING</h3>
+        <p class="car-large">Choose a pricing plan that fits your needs.</p>
+        <div class="car-row-padding" style="margin-top:64px">
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-black car-xlarge car-padding-32">Basic Car Wash</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;10</h2>
+                        <span class="car-opacity">per month</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car-third">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-red car-xlarge car-padding-48">Car Spa &Aacute; Detailing</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;25</h2>
+                        <span class="car-opacity">per month</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-black car-xlarge car-padding-32">Complete Car Care</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;50</h2>
+                        <span class="car-opacity">per month</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+>>>>>>> Stashed changes
                     </li>
                 </ul>
             </div>
@@ -117,6 +243,7 @@ body, html {
     </div>
 
     <!-- Footer -->
+<<<<<<< Updated upstream
     <footer class="w3-center w3-black w3-padding-64">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
@@ -137,6 +264,110 @@ body, html {
             document.getElementById("modal01").style.display = "block";
             var captionText = document.getElementById("caption");
             captionText.innerHTML = element.alt;
+=======
+    <footer class="car-black car-row-padding faq-heading">
+        <div class="car-col l5">
+            <img class="car-padding-16" src="./Images/logo1.png" style="width:180px; height:auto;" alt="Flash Car">
+            <p style="width:500px;max-width: 100%;">
+                Flash car wash our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+                we strive to provide exceptional results at an attainable price.
+            </p>
+            <p>
+                © Flash Car LTD<br />
+                All rights reserved.<br />
+                Registered company number: #11018311<br>
+                VAT: GB330260354
+            </p>
+        </div>
+        <div class="car-col l2">
+            <p><strong>Service</strong></p>
+            <p><a href="/Service.html" target="_blank">VIP Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Full Detailing</a></p>
+            <p><a href="/Service.html" target="_blank">Polish + Ceramic Coatings</a></p>
+            <p><a href="/Service.html" target="_blank">Inside and Outside Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Outside Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Inside Clean</a></p>
+            <p><a href="/Service.html" target="_blank">Quick Flash Wash</a></p>
+            <p><a href="/Faqs.html" target="_blank"> FAQ</a></p>
+        </div>
+        <div class="car-col l2">
+            <p><strong>Legal</strong></p>
+            <p><a>Terms & Conditions</a></p>
+            <p><a>Privacy Policy</a></p>
+
+        </div>
+        <div class="car-col l3">
+            <p>
+                Sign up to our newsletter
+            </p>
+            <div class="car-col m8 car-padding-16">
+                <input type="email" value="" name="EMAIL" class="car-input car-border" placeholder="Your Email...">
+            </div>
+            <div class="car-col m4 car-padding-16">
+                <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
+            </div>
+
+            <div class="car-xlarge car-section">
+                <i class="fa fa-facebook-official car-hover-opacity"></i>
+                <i class="fa fa-instagram car-hover-opacity"></i>
+                <i class="fa fa-snapchat car-hover-opacity"></i>
+                <i class="fa fa-pinterest-p car-hover-opacity"></i>
+                <i class="fa fa-twitter car-hover-opacity"></i>
+                <i class="fa fa-linkedin car-hover-opacity"></i>
+            </div>
+
+            <a href="#home" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
+
+
+        </div>
+
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <strong>Book Your Appointment</strong>
+            <span class="close">&times;</span>
+            <form target="_blank">
+                <p><input class="car-input car-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="car-input car-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="car-input car-border" type="text" placeholder="Date" required name="Date"></p>
+                <p><input class="car-input car-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="car-button car-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> Book Appointment
+                    </button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        function btn_click() {
+        
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+>>>>>>> Stashed changes
         }
 
 
