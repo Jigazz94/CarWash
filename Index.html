@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="images/x-icon" href="Images/logo.png" />
+    <link rel="icon" type="images/x-icon" href="./Images/favicon.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,12 +21,12 @@
         }
 
         /* Full height image header */
-        .bgimg-1 {
+        /*.bgimg-1 {
             background-position: center;
             background-size: cover;
             background-image: url("Images/slider/1.jpg");
             min-height: 100%;
-        }
+        }*/
 
         .car-bar .car-button {
             padding: 16px;
@@ -37,21 +37,21 @@
 
     <!-- Navbar (sit on top) -->
     <div class="car-top">
-        <div class="car-bar car-white car-card" id="myNavbar">
-            <a href="#home" class="car-bar-item car-button car-wide"> LOGO </a>
+        <div class="car-bar car-black car-card" id="myNavbar">
+            <a href="#home" class="car-bar-item car-wide"> <img src="./Images/logo.png" style="width:135px; height:auto;" alt="Southern Hand Car Wash"> </a>
             <!-- Right-sided navbar links -->
             <div class="car-right car-hide-small">
-                <a href="./Index.html" target="_self" class="car-bar-item car-button"> HOME</a>
-                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user"></i> ABOUT US</a>
-                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-th"></i> SERVICE</a>
-                <a href="./Pricing.html" target="_self" class="car-bar-item car-button"><i class="fa fa-usd"></i> PRICING</a>
-                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-arrow-up"></i>GALLERY</a>
-                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i>FAQs</a>
+                <a href="./Index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i> SERVICE</a>
+                <a href="./Pricing.html" target="_self" class="car-bar-item car-button"><i class="fa fa-gbp"></i> PRICING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i> GALLERY</a>
+                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i> FAQs</a>
                 <a href="./Contact.html" target="_self" class="car-bar-item car-button"><i class="fa fa-envelope"></i> CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="w3_open()">
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="FlashCar_Open()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -59,38 +59,65 @@
 
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
-        <a href="./Index.html" onclick="w3_close()" class="car-bar-item car-button"> HOME</a>
-        <a href="./Aboutus.html" onclick="w3_close()" class="car-bar-item car-button">ABOUT US</a>
-        <a href="./Service.html" onclick="w3_close()" class="car-bar-item car-button"> SERVICE</a>
-        <a href="./Pricing.html" onclick="w3_close()" class="car-bar-item car-button"> PRICING</a>
-        <a href="./Gallery.html" onclick="w3_close()" class="car-bar-item car-button"> GALLERY</a>
-        <a href="./Faqs.html" onclick="w3_close()" class="car-bar-item car-button"> FAQs</a>
-        <a href="./Contact.html" onclick="w3_close()" class="car-bar-item car-button"> CONTACT</a>
+        <a href="javascript:void(0)" onclick="FlashCar_Close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+        <a href="./Index.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="FlashCar_Close()" class="car-bar-item car-button">ABOUT US</a>
+        <a href="./Service.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> SERVICE</a>
+        <a href="./Pricing.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> PRICING</a>
+        <a href="./Gallery.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> FAQs</a>
+        <a href="./Contact.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
-    <header class="bgimg-1 car-display-container car-grayscale-min" id="home">
-        <div class="car-display-left car-text-white" style="padding:48px">
-            <span class="car-jumbo car-hide-small">WELCOME TO FLASH CAR WASH</span><br>
-            <span class="car-xxlarge car-hide-large car-hide-medium">CAR BEAUTY CENTER &Aacute; CERAMIC COATING ZONE</span><br>
-            <span class="car-large">YOUR CAR IS ALWAYS IN GREAT HAND WITH US</span>
-            <p><a href="/Pricing.html" target="_blank" class="car-button car-white car-padding-large car-large car-margin-top car-opacity car-hover-opacity-off">Book Now</a></p>
+    <header class="car-display-container car-grayscale-min" id="home">
+        <div class="slideshow-container_header">
+            <div class="mySlides_header fade">
+                <div class="numbertext_header">1 / 3</div>
+                <img src="./Images/slider/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_header fade">
+                <div class="numbertext_header">2 / 3</div>
+                <img src="./Images/slider/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_header fade">
+                <div class="numbertext_header">3 / 3</div>
+                <img src="./Images/slider/3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev_testi" onclick="plusSlides_header(-1)">❮</a>
+            <a class="next_testi" onclick="plusSlides_header(1)">❯</a>
+
         </div>
-        <div class="car-display-bottomleft car-text-grey car-large" style="padding:24px 48px">
-            <i class="fa fa-facebook-official car-hover-opacity"></i>
-            <i class="fa fa-instagram car-hover-opacity"></i>
-            <i class="fa fa-snapchat car-hover-opacity"></i>
-            <i class="fa fa-pinterest-p car-hover-opacity"></i>
-            <i class="fa fa-twitter car-hover-opacity"></i>
-            <i class="fa fa-linkedin car-hover-opacity"></i>
+        <br />
+        <div style="text-align:center;">
+            <span class="dot_header" onclick="currentSlide_header(1)"></span>
+            <span class="dot_header" onclick="currentSlide_header(2)"></span>
+            <span class="dot_header" onclick="currentSlide_header(3)"></span>
         </div>
+
+        <!--<div class="car-display-left car-text-white" style="padding:48px">
+        <span class="car-jumbo car-hide-small">WELCOME TO FLASH CAR WASH</span><br>
+        <span class="car-xxlarge car-hide-large car-hide-medium">CAR BEAUTY CENTER &Aacute; CERAMIC COATING ZONE</span><br>
+        <span class="car-large">YOUR CAR IS ALWAYS IN GREAT HAND WITH US</span>
+        <p><a href="/Pricing.html" target="_blank" class="car-button car-white car-padding-large car-large car-margin-top car-opacity car-hover-opacity-off">Book Now</a></p>
+    </div>
+    <div class="car-display-bottomleft car-text-grey car-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official car-hover-opacity"></i>
+        <i class="fa fa-instagram car-hover-opacity"></i>-->
+        <!--<i class="fa fa-snapchat car-hover-opacity"></i>
+    <i class="fa fa-pinterest-p car-hover-opacity"></i>-->
+        <!--<i class="fa fa-twitter car-hover-opacity"></i>
+        <i class="fa fa-linkedin car-hover-opacity"></i>
+    </div>-->
     </header>
+
+
     <!-- About Section -->
     <div class="car-container  car-padding-64">
         <div class="car-row-padding">
             <div class="car-col m6">
-                <h3>Who Is Flash Car Wash</h3>
+                <h3>Who Is Southern Hand Car Wash</h3>
                 <p>
                     Our bespoke car detailing services will ensure you are always driving a clean, pristine and well-loved vehicle.
                     Whether that be the interior, exterior or both. Operating directly from Hampshire our staff go out of their way to ensure all your standards are met.
@@ -119,7 +146,7 @@
             <div class="column">
                 <div class="card">
                     <div class="icon-wrapper">
-                        <i class="fa fa-wrench"></i>
+                        <i class="fa fa-car"></i>
                     </div>
                     <h3>VIP WASH</h3>
                     <p>
@@ -130,7 +157,7 @@
             <div class="column">
                 <div class="card">
                     <div class="icon-wrapper">
-                        <i class="fa fa-wrench"></i>
+                        <i class="fa fa-car"></i>
                     </div>
                     <h3>Full detailing</h3>
                     <p>
@@ -141,7 +168,7 @@
             <div class="column">
                 <div class="card">
                     <div class="icon-wrapper">
-                        <i class="fa fa-wrench"></i>
+                        <i class="fa fa-car"></i>
                     </div>
                     <h3>Inside and outside wash</h3>
                     <p>
@@ -183,10 +210,11 @@
 
     <!-- Contact Section -->
     <div class="car-container car-light-grey car-padding-64">
-        <h3 class="car-center">contact</h3>
-        <p class="car-center car-large">lets get in touch. send us a message:</p>
+
         <div class="car-row-padding">
             <div class="car-col m6">
+                <h3 class="car-center">Contact</h3>
+                <p class="car-center car-large">lets get in touch. send us a message:</p>
                 <form action="/action_page.php" target="_blank">
                     <p><input class="car-input car-border" type="text" placeholder="name" required name="name"></p>
                     <p><input class="car-input car-border" type="text" placeholder="email" required name="email"></p>
@@ -200,7 +228,17 @@
                 </form>
             </div>
             <div class="car-col m6">
-                <img src="images/map.jpg" class="car-image car-greyscale" width="700" height="394">
+                <h3 class="car-center">Opening hours</h3>
+                <p class="car-center car-large">Monday to Friday – 9:00 am – 6:00pm, Saturday – 10:00 am – 7:00 pm, Sunday closed</p>
+                <iframe width="700"
+                        height="394"
+                        style="border:0"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDI4xaKZLllWp-L0ft3-MeBO4DGxwROgQo&q=Southern+Hand+Car+Wash,Imperial+Rd,Southampton+SO14+0JU">
+                </iframe>
+                <!--<img src="images/map.jpg" class="car-image car-greyscale" width="700" height="394">-->
                 <!--<img class="car-image car-round-large" src="Images/Work/11.jpg" alt="Buildings" width="700" height="394">-->
             </div>
 
@@ -233,16 +271,14 @@
     <!-- Footer -->
     <footer class="car-black car-row-padding faq-heading">
         <div class="car-col l5">
-            <img class="car-padding-16" src="./Images/logo1.png" style="width:180px; height:auto;" alt="Flash Car">
-            <p style="width:500px;">
-                Flash car wash our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Hand Car Wash">
+            <p>
+                Here at the Southern Hand Car Wash, our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
                 we strive to provide exceptional results at an attainable price.
             </p>
             <p>
-                © Flash Car LTD<br />
-                All rights reserved.<br />
-                Registered company number: #11018311<br>
-                VAT: GB330260354
+                © Southern Hand Car Wash LTD<br />
+                All rights reserved.
             </p>
         </div>
         <div class="car-col l2">
@@ -270,20 +306,17 @@
                 <input type="email" value="" name="EMAIL" class="car-input car-border" placeholder="Your Email...">
             </div>
             <div class="car-col m4 car-padding-16">
-                <a href="#" class="car-button car-light-grey"  style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
+                <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
             </div>
 
             <div class="car-xlarge car-section">
-                <i class="fa fa-facebook-official car-hover-opacity"></i>
-                <i class="fa fa-instagram car-hover-opacity"></i>
-                <i class="fa fa-snapchat car-hover-opacity"></i>
-                <i class="fa fa-pinterest-p car-hover-opacity"></i>
-                <i class="fa fa-twitter car-hover-opacity"></i>
-                <i class="fa fa-linkedin car-hover-opacity"></i>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
             </div>
 
             <a href="#home" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
-
 
         </div>
 
@@ -293,7 +326,7 @@
         // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
 
-        function w3_open() {
+        function FlashCar_Open() {
             if (mySidebar.style.display === 'block') {
                 mySidebar.style.display = 'none';
             } else {
@@ -302,11 +335,45 @@
         }
 
         // Close the sidebar with the close button
-        function w3_close() {
+        function FlashCar_Close() {
             mySidebar.style.display = "none";
         }
 
-        //Testimonial Section
+        //Header Slider Section
+        let slideIndex_header = 0;
+        showSlides_header(slideIndex_header);
+
+        function plusSlides_header(n) {
+            showSlides_header(slideIndex_header += n);
+        }
+
+        function currentSlide_header(n) {
+            showSlides_header(slideIndex_header = n);
+        }
+
+        function showSlides_header(n) {
+            let j;
+            let slides_header = document.getElementsByClassName("mySlides_header");
+            let dots_header = document.getElementsByClassName("dot_header");
+
+            if (n > slides_header.length) { slideIndex_header = 1 }
+            if (n < 1) { slideIndex_header = slides_header.length }
+
+            for (j = 0; j < slides_header.length; j++) {
+                slides_header[j].style.display = "none";
+            }
+            slideIndex_header++;
+
+             if (slideIndex_header > slides_header.length) { slideIndex_header = 1 }
+            for (j = 0; j < dots_header.length; j++) {
+                dots_header[j].className = dots_header[j].className.replace(" active_header", "");
+            }
+            slides_header[slideIndex_header - 1].style.display = "block";
+            dots_header[slideIndex_header - 1].className += " active_header";
+            setTimeout(showSlides_header, 5000); // Change image every 2 seconds
+        }
+
+        // Testimonial Section
         var slideIndex = 1;
         showSlides(slideIndex);
 

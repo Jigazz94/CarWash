@@ -1230,6 +1230,7 @@ a {
 
 .car-right-align {
     text-align: right !important
+    
 }
 
 .car-justify {
@@ -1375,7 +1376,8 @@ a {
 }
 
 .car-right {
-    float: right !important
+    float: right !important; 
+    line-height:3.8 !important;
 }
 
 .car-button:hover {
@@ -1764,6 +1766,62 @@ a {
 .car-border-pale-blue, .car-hover-border-pale-blue:hover {
     border-color: #e7ffff !important
 }
+
+/*Start Home Page Header Slider*/
+.mySlides_header {
+    display: none;
+}
+
+img_header {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container_header {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot_header {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active_header {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade_header {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+/*End Home Page Slider*/
 
 
 /*Testimonial section css start*/

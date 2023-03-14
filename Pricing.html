@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="Style\style.css">
-<link rel="icon" type="images/x-icon" href="Images/logo.png" />
+<link rel="icon" type="images/x-icon" href="./Images/favicon.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -19,6 +19,13 @@ body, html {
 .car-bar .car-button {
   padding: 16px;
 }
+
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("Images/header/header_03.jpg");
+        min-height: 50%;
+    }
 
     /* The Modal (background) */
     .modal {
@@ -66,21 +73,21 @@ body, html {
 
     <!-- Navbar (sit on top) -->
     <div class="car-top">
-        <div class="car-bar car-white car-card" id="myNavbar">
-            <a href="#home" class="car-bar-item car-button car-wide"> LOGO </a>
+        <div class="car-bar car-black car-card" id="myNavbar">
+            <a href="#home" class="car-bar-item car-wide"> <img src="./Images/logo.png" style="width:135px; height:auto;" alt="Southern Hand Car Wash"> </a>
             <!-- Right-sided navbar links -->
             <div class="car-right car-hide-small">
                 <a href="./Index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
-                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user"></i> ABOUT US</a>
-                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-th"></i> SERVICE</a>
-                <a href="./Pricing.html" target="_self" class="car-bar-item car-button"> PRICING</a>
-                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-arrow-up"></i>GALLERY</a>
-                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i>FAQs</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i> SERVICE</a>
+                <a href="./Pricing.html" target="_self" class="car-bar-item car-button">PRICING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i> GALLERY</a>
+                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i> FAQs</a>
                 <a href="./Contact.html" target="_self" class="car-bar-item car-button"><i class="fa fa-envelope"></i> CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="w3_open()">
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="FlashCar_Open()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -88,87 +95,123 @@ body, html {
 
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
-        <a href="./Index.html" onclick="w3_close()" class="car-bar-item car-button"> HOME</a>
-        <a href="./Aboutus.html" onclick="w3_close()" class="car-bar-item car-button">ABOUT US</a>
-        <a href="./Service.html" onclick="w3_close()" class="car-bar-item car-button"> SERVICE</a>
-        <a href="./Pricing.html" onclick="w3_close()" class="car-bar-item car-button"> PRICING</a>
-        <a href="./Gallery.html" onclick="w3_close()" class="car-bar-item car-button"> GALLERY</a>
-        <a href="./Faqs.html" onclick="w3_close()" class="car-bar-item car-button"> FAQs</a>
-        <a href="./Contact.html" onclick="w3_close()" class="car-bar-item car-button"> CONTACT</a>
+        <a href="javascript:void(0)" onclick="FlashCar_Close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+        <a href="./Index.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="FlashCar_Close()" class="car-bar-item car-button">ABOUT US</a>
+        <a href="./Service.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> SERVICE</a>
+        <a href="./Pricing.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> PRICING</a>
+        <a href="./Gallery.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> FAQs</a>
+        <a href="./Contact.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> CONTACT</a>
     </nav>
 
-
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 car-display-container car-grayscale-min">
+        <div class="car-display-left car-text-white" style="padding:48px">
+        </div>
+    </header>
 
     <!-- Pricing Section -->
-    <div class="car-container car-center car-dark-grey" style="padding:128px 16px" id="pricing">
+    <div class="car-container car-center car-dark-grey car-padding-64" id="pricing">
         <h3>PRICING</h3>
         <p class="car-large">Choose a pricing plan that fits your needs.</p>
-        <div class="car-row-padding" style="margin-top:64px">
+        <div class="car-row-padding">
             <div class="car-third car-section">
                 <ul class="car-ul car-white car-hover-shadow">
-                    <li class="car-black car-xlarge car-padding-32">Basic Car Wash</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
+                    <li class="car-black car-xlarge car-padding-32">Inside clean</li>
+                    <li class="car-padding-16">A detailed clean of the inside of your vehicle, perfect for when you need a quick clean of leftover crumbs or just muddy shoes on the carpets!</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;20</h2>
+                        <span class="car-opacity">per wash</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-red car-xlarge car-padding-32">VIP wash</li>
+                    <li class="car-padding-16">Includes full detail of car including inside and outside wash</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;220</h2>
+                        <span class="car-opacity">per wash</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-black car-xlarge car-padding-32">Inside and outside wash </li>
+                    <li class="car-padding-16">A customer favourite – this includes a full detailed clean of both the exterior and interior of your vehicle leaving it in shining condition.</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;40</h2>
+                        <span class="car-opacity">per wash</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-black car-xlarge car-padding-48">Outside wash</li>
+                    <li class="car-padding-16">Perfect for when you have limited time but need your vehicle looking fresh and clean from the outside</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;20</h2>
+                        <span class="car-opacity">per wash</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-red car-xlarge car-padding-32">Polish + Ceramic coatings</li>
+                    <li class="car-padding-16">This protects your paintwork from harmful UV, minor abrasions and chipping whilst also enabling easy maintenance and cleaning due to its ultra-hydrophobic properties</li>
+                    <li class="car-padding-16">
+                        <h2 class="car-wide">&#163;100</h2>
+                        <span class="car-opacity">per wash</span>
+                    </li>
+                    <li class="car-light-grey car-padding-24">
+                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car-third car-section">
+                <ul class="car-ul car-white car-hover-shadow">
+                    <li class="car-black car-xlarge car-padding-32">Quick Flash Wash</li>
+                    <li class="car-padding-16">Perfect for those busy errand running days. An efficient and effective cleaning of your vehicle</li>
                     <li class="car-padding-16">
                         <h2 class="car-wide">&#163;10</h2>
-                        <span class="car-opacity">per month</span>
+                        <span class="car-opacity">per wash</span>
                     </li>
                     <li class="car-light-grey car-padding-24">
                         <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
                     </li>
                 </ul>
             </div>
-            <div class="car-third">
-                <ul class="car-ul car-white car-hover-shadow">
-                    <li class="car-red car-xlarge car-padding-48">Car Spa &Aacute; Detailing</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">
-                        <h2 class="car-wide">&#163;25</h2>
-                        <span class="car-opacity">per month</span>
-                    </li>
-                    <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="car-third car-section">
-                <ul class="car-ul car-white car-hover-shadow">
-                    <li class="car-black car-xlarge car-padding-32">Complete Car Care</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">Lorem ipsum dolor sit amet</li>
-                    <li class="car-padding-16">
-                        <h2 class="car-wide">&#163;50</h2>
-                        <span class="car-opacity">per month</span>
-                    </li>
-                    <li class="car-light-grey car-padding-24">
-                        <button id="btnsignup" class="car-button car-black car-padding-large" onClick="btn_click()">Book Now</button>
-                    </li>
-                </ul>
-            </div>
+
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="car-black car-row-padding faq-heading">
         <div class="car-col l5">
-            <img class="car-padding-16" src="./Images/logo1.png" style="width:180px; height:auto;" alt="Flash Car">
-            <p style="width:500px;">
-                Flash car wash our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Hand Car Wash">
+            <p>
+                Here at the Southern Hand Car Wash, our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
                 we strive to provide exceptional results at an attainable price.
             </p>
             <p>
-                © Flash Car LTD<br />
-                All rights reserved.<br />
-                Registered company number: #11018311<br>
-                VAT: GB330260354
+                © Southern Hand Car Wash LTD<br />
+                All rights reserved.
             </p>
         </div>
         <div class="car-col l2">
@@ -200,16 +243,13 @@ body, html {
             </div>
 
             <div class="car-xlarge car-section">
-                <i class="fa fa-facebook-official car-hover-opacity"></i>
-                <i class="fa fa-instagram car-hover-opacity"></i>
-                <i class="fa fa-snapchat car-hover-opacity"></i>
-                <i class="fa fa-pinterest-p car-hover-opacity"></i>
-                <i class="fa fa-twitter car-hover-opacity"></i>
-                <i class="fa fa-linkedin car-hover-opacity"></i>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
             </div>
 
-            <a href="#home" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
-
+            <a href="#price" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
 
         </div>
 
@@ -222,15 +262,45 @@ body, html {
             <strong>Book Your Appointment</strong>
             <span class="close">&times;</span>
             <form target="_blank">
-                <p><input class="car-input car-border" type="text" placeholder="Name" required name="Name"></p>
-                <p><input class="car-input car-border" type="text" placeholder="Email" required name="Email"></p>
-                <p><input class="car-input car-border" type="text" placeholder="Date" required name="Date"></p>
-                <p><input class="car-input car-border" type="text" placeholder="Message" required name="Message"></p>
+                <p><input class="car-input car-border" type="text" id="txtname" placeholder="Name" required name="Name"></p>
+                <p><input class="car-input car-border" type="text" id="txtemail" placeholder="Email" required name="Email"></p>
+                <p><input class="car-input car-border" type="date" id="txtdate" placeholder="Date" required name="Date"></p>
+
                 <p>
-                    <button class="car-button car-black" type="submit">
-                        <i class="fa fa-paper-plane"></i> Book Appointment
-                    </button>
+                    <select id="ddlcarsize" class="car-input car-border" required>
+                        <option>-Select Vehicle type-</option>
+                        <option>Small Size Car</option>
+                        <option>Medium Size Car</option>
+                        <option>Large Size Car</option>
+                    </select>
                 </p>
+                <p>
+                    <select id="ddlservice" class="car-input car-border" required>
+                        <option>-Select Service-</option>
+                        <option>VIP Wash</option>
+                        <option>Polish + Ceramic Coatings</option>
+                        <option>Inside and Outside Wash</option>
+                        <option>Outside Wash</option>
+                        <option>Inside Clean</option>
+                        <option>Quick Flash Wash</option>
+                    </select>
+                <p>
+                <p>
+                    <select id="ddladdon" class="car-input car-border" required>
+                        <option>-Select Add-OnOption-</option>
+                        <option>Soft top clean & Protect £90.00</option>
+                        <option>Body wax  £10.00</option>
+                        <option>HD bodywax £55.00</option>
+                        <option>Ozone Air Purifying & Smell Clean £50.00</option>
+                        <option>Machine Polish £120.00</option>
+                    </select>
+                </p>
+                <p><textarea class="car-input car-border" id="txtmessage" placeholder="Message" required name="Message"></textarea></p>
+               <p> <button class="car-button car-black" type="submit">
+                    <i class="fa fa-paper-plane"></i> Book Appointment
+                </button>
+                </p>
+                <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
             </form>
         </div>
     </div>
@@ -238,14 +308,14 @@ body, html {
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
-        
+
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal
         function btn_click() {
-        
+
             modal.style.display = "block";
         }
 
@@ -265,7 +335,7 @@ body, html {
         // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
 
-        function w3_open() {
+        function FlashCar_Open() {
             if (mySidebar.style.display === 'block') {
                 mySidebar.style.display = 'none';
             } else {
@@ -274,7 +344,7 @@ body, html {
         }
 
         // Close the sidebar with the close button
-        function w3_close() {
+        function FlashCar_Close() {
             mySidebar.style.display = "none";
         }
     </script>

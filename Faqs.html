@@ -4,7 +4,7 @@
     <title>FAQs | Car Wash</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="images/x-icon" href="Images/logo.png" />
+    <link rel="icon" type="images/x-icon" href="./Images/favicon.png" />
     <link rel="stylesheet" href="Style\style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,6 +21,13 @@
         .car-bar .car-button {
             padding: 16px;
         }
+
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("Images/header/header_05.jpg");
+            min-height: 50%;
+        }
     </style>
 </head>
 <body>
@@ -28,15 +35,15 @@
 
     <!-- Navbar (sit on top) -->
     <div class="car-top">
-        <div class="car-bar car-white car-card" id="myNavbar">
-            <a href="#home" class="car-bar-item car-button car-wide"> LOGO </a>
+        <div class="car-bar car-black car-card" id="myNavbar">
+            <a href="#home" class="car-bar-item car-wide"> <img src="./Images/logo.png" style="width:135px; height:auto;" alt="Southern Hand Car Wash"> </a>
             <!-- Right-sided navbar links -->
             <div class="car-right car-hide-small">
                 <a href="./Index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
-                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user"></i> ABOUT US</a>
-                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-th"></i> SERVICE</a>
-                <a href="./Pricing.html" target="_self" class="car-bar-item car-button"><i class="fa fa-usd"></i> PRICING</a>
-                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-arrow-up"></i>GALLERY</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i> SERVICE</a>
+                <a href="./Pricing.html" target="_self" class="car-bar-item car-button"><i class="fa fa-gbp"></i> PRICING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i> GALLERY</a>
                 <a href="./Faqs.html" target="_self" class="car-bar-item car-button">FAQs</a>
                 <a href="./Contact.html" target="_self" class="car-bar-item car-button"><i class="fa fa-envelope"></i> CONTACT</a>
             </div>
@@ -60,11 +67,17 @@
         <a href="./Contact.html" onclick="w3_close()" class="car-bar-item car-button"> CONTACT</a>
     </nav>
 
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 car-display-container car-grayscale-min">
+        <div class="car-display-left car-text-white" style="padding:48px">
+        </div>
+    </header>
 
 
     <!-- Faq Section -->
-    <div class="car-container" style="padding:128px 16px" id="faq">
-
+    <div class="car-container car-padding-64" id="faq">
+        <h3 class="car-center">FAQs</h3>
+        <p class="car-center car-large">We're here to help</p>
         <section class="faq-container">
             <div class="faq-one">
 
@@ -134,8 +147,6 @@
                     </p>
                 </div>
             </div>
-
-
         </section>
     </div>
 
@@ -144,16 +155,14 @@
     <!-- Footer -->
     <footer class="car-black car-row-padding faq-heading">
         <div class="car-col l5">
-            <img class="car-padding-16" src="./Images/logo1.png" style="width:180px; height:auto;" alt="Flash Car">
-            <p style="width:500px;">
-                Flash car wash our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Hand Car Wash">
+            <p>
+                Here at the Southern Hand Car Wash, our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
                 we strive to provide exceptional results at an attainable price.
             </p>
             <p>
-                © Flash Car LTD<br />
-                All rights reserved.<br />
-                Registered company number: #11018311<br>
-                VAT: GB330260354
+                © Southern Hand Car Wash LTD<br />
+                All rights reserved.
             </p>
         </div>
         <div class="car-col l2">
@@ -185,16 +194,13 @@
             </div>
 
             <div class="car-xlarge car-section">
-                <i class="fa fa-facebook-official car-hover-opacity"></i>
-                <i class="fa fa-instagram car-hover-opacity"></i>
-                <i class="fa fa-snapchat car-hover-opacity"></i>
-                <i class="fa fa-pinterest-p car-hover-opacity"></i>
-                <i class="fa fa-twitter car-hover-opacity"></i>
-                <i class="fa fa-linkedin car-hover-opacity"></i>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
             </div>
 
-            <a href="#home" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
-
+            <a href="#faq" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
 
         </div>
 
