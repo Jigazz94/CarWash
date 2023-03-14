@@ -2053,5 +2053,16 @@ q_testi {
         max-width: 33.33%;
     }
 }
-/*Service css end*/
 
+
+@media screen and (max-width: 768px) {
+    .faq-page {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .faq-body{
+        width: 80%;
+    }
+}
+/*Service css end*/
