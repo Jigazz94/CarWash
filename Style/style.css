@@ -1769,6 +1769,7 @@ a {
 
 /*Start Home Page Header Slider*/
 .mySlides_header {
+    padding-top: 20px;
     display: none;
 }
 
