@@ -49,7 +49,7 @@
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="w3_open()">
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="FlashCar_open()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -57,20 +57,20 @@
 
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
-        <a href="./Index.html" onclick="w3_close()" class="car-bar-item car-button"> HOME</a>
-        <a href="./Aboutus.html" onclick="w3_close()" class="car-bar-item car-button">ABOUT US</a>
-        <a href="./Service.html" onclick="w3_close()" class="car-bar-item car-button"> SERVICE</a>
-        <a href="./Pricing.html" onclick="w3_close()" class="car-bar-item car-button"> PRICING</a>
-        <a href="./Gallery.html" onclick="w3_close()" class="car-bar-item car-button"> GALLERY</a>
-        <a href="./Faqs.html" onclick="w3_close()" class="car-bar-item car-button"> FAQs</a>
-        <a href="./Contact.html" onclick="w3_close()" class="car-bar-item car-button"> CONTACT</a>
+        <a href="javascript:void(0)" onclick="FlashCar_Close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+        <a href="./Index.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="FlashCar_Close()" class="car-bar-item car-button">ABOUT US</a>
+        <a href="./Service.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> SERVICE</a>
+        <a href="./Pricing.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> PRICING</a>
+        <a href="./Gallery.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> FAQs</a>
+        <a href="./Contact.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 car-display-container car-grayscale-min">
         <div class="car-display-middle car-text-white car-margin-top car-center">
-            <span class="car-xxxlarge car-hide-small car-wide"><span class="car-padding car-black car-opacity-min">FAQs</span></span>
+            <span class="car-xxlarge car-hide-small car-wide"><span class="car-padding car-black car-opacity-min">FAQs</span></span>
         </div>
     </header>
 
@@ -228,7 +228,7 @@
         // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
 
-        function w3_open() {
+        function FlashCar_open() {
             if (mySidebar.style.display === 'block') {
                 mySidebar.style.display = 'none';
             } else {
@@ -237,7 +237,7 @@
         }
 
         // Close the sidebar with the close button
-        function w3_close() {
+        function FlashCar_close() {
             mySidebar.style.display = "none";
         }
     </script>
