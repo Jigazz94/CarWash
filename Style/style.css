@@ -1230,7 +1230,6 @@ a {
 
 .car-right-align {
     text-align: right !important
-    
 }
 
 .car-justify {
@@ -1302,9 +1301,10 @@ a {
     margin-left: 16px !important
 }
 
-.car-margin-left-large{
+.car-margin-left-large {
     margin-left: 30px !important
 }
+
 .car-margin-right {
     margin-right: 16px !important
 }
@@ -1320,6 +1320,7 @@ a {
 .car-padding-large {
     padding: 12px 24px !important
 }
+
 .car-padding-extralarge {
     padding: 0px 60px !important
 }
@@ -1376,8 +1377,8 @@ a {
 }
 
 .car-right {
-    float: right !important; 
-    line-height:3.8 !important;
+    float: right !important;
+    line-height: 3.8 !important;
 }
 
 .car-button:hover {
@@ -1767,6 +1768,9 @@ a {
     border-color: #e7ffff !important
 }
 
+.car-web-red {
+    color: #ff3131 !important;
+}
 /*Start Home Page Header Slider*/
 .mySlides_header {
     padding-top: 20px;
@@ -1829,15 +1833,65 @@ img_header {
 /* Slideshow container */
 .slideshow-container_testi {
     position: relative;
-   /* background: #f1f1f1f1;*/
+    /* background: #f1f1f1f1;*/
 }
 
 /* Slides */
 .mySlides_testi {
-    display: none;
-    padding: 20px;
-    text-align: center;
+    padding: 70px 30px 50px;
+    margin: 50px 30px 30px;
+    border: 1px solid #000;
+    position: relative;
 }
+
+    .mySlides_testi .pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid #ff3131;
+        overflow: hidden;
+        margin: 0 auto;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+    }
+
+        .mySlides_testi .pic img {
+            width: 100%;
+            height: auto;
+        }
+
+    .mySlides_testi .description {
+        font-size: 15px;
+        color: #5e595b;
+        line-height: 27px;
+        text-align: center;
+        margin: 0;
+        position: relative;
+    }
+
+    .mySlides_testi .title {
+        display: inline-table;
+        padding: 10px;
+        margin: 0 auto;
+        background: #fff;
+        border: 1px solid #ff3131;
+        font-size: 20px;
+        font-weight: 700;
+        color: #ff3131;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -22px;
+        left: 0;
+        right: 0;
+    }
+
+    .mySlides_testi .post {
+        font-size: 15px;
+        color: #671a36;
+    }
 
 /* Next & previous buttons */
 .prev_testi, .next_testi {
@@ -1871,7 +1925,7 @@ img_header {
 .dot-container_testi {
     text-align: center;
     padding: 20px;
-   /* background: #ddd;*/
+    /* background: #ddd;*/
 }
 
 /* The dots/bullets/indicators */
@@ -1898,8 +1952,9 @@ q_testi {
 
 /* Add a blue color to the author */
 .author_testi {
-    color: #ff3131;
+    color: #fff;
     font-style: italic;
+    font-weight: 600;
 }
 /*Testinnial section css end*/
 
@@ -1946,7 +2001,7 @@ q_testi {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-    color:#fff;
+    color: #fff;
     background-color: #ff3131;
 }
 
@@ -2007,8 +2062,8 @@ q_testi {
     position: relative;
     margin: auto;
     font-size: 30px;
-    height: 2.5em;
-    width: 2.5em;
+    height: 3.5em;
+    width: 3.5em;
     color: #ffffff;
     border-radius: 50%;
     display: grid;
@@ -2021,7 +2076,7 @@ q_testi {
 }
 
     .card:hover .icon-wrapper {
-        background-color: #ffffff;
+        background-color: #000000;
         color: #ff3131;
     }
 
@@ -2062,7 +2117,7 @@ q_testi {
         padding: 15px 20px;
     }
 
-    .faq-body{
+    .faq-body {
         width: 80%;
     }
 }
