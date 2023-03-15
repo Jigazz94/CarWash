@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Contact us | Car Wash</title>
     <meta charset="UTF-8">
@@ -9,11 +10,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body, h1, h2, h3, h4, h5, h6 {
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: "Raleway", sans-serif
         }
 
-        body, html {
+        body,
+        html {
             height: 100%;
             line-height: 1.8;
         }
@@ -33,35 +41,94 @@
         #chat-bot-message-container.slide-in {
             display: none !important;
         }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Navbar (sit on top) -->
     <div class="car-top">
         <div class="car-bar car-black car-card" id="myNavbar">
-            <a href="#home" class="car-bar-item car-wide"> <img src="./Images/logo.png" style="width:135px; height:auto;" alt="Southern Car Wash"> </a>
+            <a href="#home" class="car-bar-item car-wide"> <img src="./Images/logo.png"
+                    style="width:135px; height:auto;" alt="Southern Car Wash"> </a>
             <!-- Right-sided navbar links -->
             <div class="car-right car-hide-small">
-                <a href="./Index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
-                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT US</a>
-                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i> SERVICE</a>
-                <a href="./Booking.html" target="_self" class="car-bar-item car-button"><i class="fa fa-gbp"></i> BOOKING</a>
-                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i> GALLERY</a>
-                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i> FAQs</a>
+                <a href="./Index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i>
+                    HOME</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT
+                    US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i>
+                    SERVICE</a>
+                <a href="./Booking.html" target="_self" class="car-bar-item car-button"><i class="fa fa-gbp"></i>
+                    BOOKING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i>
+                    GALLERY</a>
+                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i
+                        class="fa fa-question-circle"></i> FAQs</a>
                 <a href="./Contact.html" target="_self" class="car-bar-item car-button">CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="FlashCar_Open()">
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium"
+                onclick="FlashCar_Open()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="FlashCar_Close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+    <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="FlashCar_Close()"
+            class="car-bar-item car-button car-large car-padding-16">Close ×</a>
         <a href="./Index.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> HOME</a>
         <a href="./Aboutus.html" onclick="FlashCar_Close()" class="car-bar-item car-button">ABOUT US</a>
         <a href="./Service.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> SERVICE</a>
@@ -74,7 +141,8 @@
     <!-- Header with full-height image -->
     <header class="bgimg-1 car-display-container car-grayscale-min" id="contact">
         <div class="car-display-middle car-text-white car-margin-top car-center">
-            <span class="car-xxxlarge car-hide-small car-wide"><span class="car-padding car-black car-opacity-min">CONTACT US</span></span>
+            <span class="car-xxxlarge car-hide-small car-wide"><span
+                    class="car-padding car-black car-opacity-min">CONTACT US</span></span>
         </div>
     </header>
 
@@ -98,7 +166,8 @@
             <div class="car-quarter">
                 <i class="fa fa-inbox car-margin-bottom car-jumbo"></i>
                 <p class="car-large">Email</p>
-                <p><a href="mailto:info@southernhandcarwash.com" style="text-decoration:none;">info@southernhandcarwash.com</a></p>
+                <p><a href="mailto:info@southernhandcarwash.com"
+                        style="text-decoration:none;">info@southernhandcarwash.com</a></p>
 
             </div>
 
@@ -121,21 +190,25 @@
                 <form onSubmit="return formreturnfalse()">
                     <p>
                         <label id="nameLabel" for="name"><span class="visually-hidden">name</span></label>
-                        <input id="txtname" aria-labelledby="nameLabel" class="car-input car-border" type="text" placeholder="name" required name="txtname">
+                        <input id="txtname" aria-labelledby="nameLabel" class="car-input car-border" type="text"
+                            placeholder="name" required name="txtname">
                     </p>
                     <p>
                         <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
 
-                        <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email" placeholder="email" required name="txtemail">
+                        <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email"
+                            placeholder="email" required name="txtemail">
                     </p>
                     <p>
                         <label id="subjectLabel" for="subject"><span class="visually-hidden">subject</span></label>
 
-                        <input id="txtsubject" aria-labelledby="subjectLabel" class="car-input car-border" type="text" placeholder="subject" required name="txtsubject">
+                        <input id="txtsubject" aria-labelledby="subjectLabel" class="car-input car-border" type="text"
+                            placeholder="subject" required name="txtsubject">
                     </p>
                     <p>
                         <label id="messageLabel" for="message"><span class="visually-hidden">message</span></label>
-                        <textarea id="txtmessage" aria-labelledby="messageLabel" class="car-input car-border" placeholder="message" required name="txtmessage" rows="5"></textarea>
+                        <textarea id="txtmessage" aria-labelledby="messageLabel" class="car-input car-border"
+                            placeholder="message" required name="txtmessage" rows="5"></textarea>
                     </p>
                     <p>
                         <button class="car-button car-black" type="submit">
@@ -146,28 +219,85 @@
             </div>
 
             <div class="car-col m6">
-                <iframe width="100%"
-                        height="394"
-                        style="border:0"
-                        loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDI4xaKZLllWp-L0ft3-MeBO4DGxwROgQo&q=Southern+Car+Wash,Imperial+Rd,Southampton+SO14+0JU">
+                <iframe width="100%" height="394" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDI4xaKZLllWp-L0ft3-MeBO4DGxwROgQo&q=Southern+Car+Wash,Imperial+Rd,Southampton+SO14+0JU">
                 </iframe>
                 <!--<img src="images/map.jpg" class="car-image car-greyscale" width="700" height="394">-->
                 <!--<img class="car-image car-round-large" src="Images/Work/11.jpg" alt="Buildings" width="700" height="394">-->
             </div>
 
         </div>
+        <button id="myBtn">Feedback</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Your feedback is valuable for us</h3>
+                <p>We would like your feedback to improve our website
+                <p>
+                <p>What is your opinion of about website?</p>
+                <div>
+                    <button class="feedback-option bad" style="font-size: xx-large;">😞</button>
+                    <button class="feedback-option good" style="font-size: xx-large;">😊</button>
+                    <button class="feedback-option very-good" style="font-size: xx-large;">😃</button>
+                    <button class="feedback-option excellent" style="font-size: xx-large;">🤩</button>
+                </div>
+
+                <p><label for="custom-feedback">Any other feedback you would like to share?</label></p>
+                <textarea id="txtmessage" aria-labelledby="messageLabel" class="car-input car-border"
+                    placeholder="Feedback" rows="4"></textarea>
+                <p></p>
+                <button class="car-button car-black" type="submit">
+                    <i class="fa fa-paper-plane"></i> Submit
+                </button>
+            </div>
+
+        </div>
     </div>
 
+    <!-- Trigger/Open The Modal -->
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="car-black car-row-padding faq-heading">
         <div class="car-col l5">
-            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Car Wash">
+            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;"
+                alt="Southern Car Wash">
             <p>
-                Here at the Southern Car Wash, our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+                Here at the Southern Car Wash, our number one priority is customer satisfaction. We are passionate and
+                driven by customer service and top-class service,
                 we strive to provide exceptional results at an attainable price.
             </p>
             <p>
@@ -184,7 +314,8 @@
             <p><a href="/Service.html" target="_blank">Outside Wash</a></p>
             <p><a href="/Service.html" target="_blank">Inside Clean</a></p>
             <p><a href="/Service.html" target="_blank">Quick Flash Wash</a></p>
-            <p><a href="/Faqs.html" target="_blank"> FAQ</a></p>
+            <p><a href="/Faqs.html" target="_blank">FAQ</a></p>
+            <p><a href="/Faqs.html" target="_blank">Feedback</a></p>
         </div>
         <div class="car-col l2">
             <p><strong>Legal</strong></p>
@@ -197,34 +328,43 @@
             </p>
             <div class="car-col m8 car-padding-16">
                 <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
-                <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email" placeholder="Your Email..." required name="txtemail">
+                <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email"
+                    placeholder="Your Email..." required name="txtemail">
 
             </div>
             <div class="car-col m4 car-padding-16">
-                <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
+                <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i
+                        class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
             </div>
 
 
             <div class="car-xlarge car-section car-wide">
-                <a href="https://www.facebook.com/" aria-label="first link" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
-                <a href="https://www.instagram.com/" aria-label="second link" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
-                <a href="https://www.twitter.com/" aria-label="third link" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
-                <a href="https://www.youtube.com/" aria-label="fourth link" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
+                <a href="https://www.facebook.com/" aria-label="first link" target="_blank"><i
+                        class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" aria-label="second link" target="_blank"><i
+                        class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" aria-label="third link" target="_blank"><i
+                        class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" aria-label="fourth link" target="_blank"><i
+                        class="fa fa-youtube car-hover-opacity"></i></a>
             </div>
 
             <h5>JOIN WITH US</h5>
 
             <div class="car-col 15">
                 <div class="car-col m6">
-                    <a href="https://www.apple.com/uk/store" target="_blank"><img src="./Images/App_store.png" style="height:35px; width:120px;" alt="App Store"></a>
+                    <a href="https://www.apple.com/uk/store" target="_blank"><img src="./Images/App_store.png"
+                            style="height:35px; width:120px;" alt="App Store"></a>
                 </div>
                 <div class="car-col m6">
-                    <a href="https://play.google.com/store/apps" target="_blank"><img src="./Images/Play_store.png" style="height:35px; width:120px;" alt="Play Store"></a>
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="./Images/Play_store.png"
+                            style="height:35px; width:120px;" alt="Play Store"></a>
                 </div>
             </div>
 
             <div class="car-col m6 car-padding-32">
-                <a href="#contact" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
+                <a href="#contact" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To
+                    the top</a>
             </div>
 
         </div>
@@ -256,4 +396,5 @@
     </script>
 
 </body>
+
 </html>
