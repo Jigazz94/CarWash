@@ -259,7 +259,7 @@
             <div class="car-col m6">
                 <h3 class="car-center">Contact</h3>
                 <p class="car-center car-large">lets get in touch. send us a message:</p>
-                <form action="/action_page.html" target="_blank">
+                <form onSubmit="return formreturnfalse()">
                     <p>
                         <label id="nameLabel" for="name"><span class="visually-hidden">name</span></label>
                         <input id="txtname" aria-labelledby="nameLabel" class="car-input car-border" type="text" placeholder="name" required name="txtname">
@@ -448,6 +448,9 @@
             dots[slideIndex - 1].className += " active_testi";
         }
 
+        function formreturnfalse() {
+            return false;
+        };
 
         (function (w, d) { w.CollectId = "64111468bddfe03b3a3cfa82"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
     </script>
