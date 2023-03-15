@@ -67,6 +67,7 @@
                 text-decoration: none;
                 cursor: pointer;
             }
+
         #chat-bot-message-container.slide-in {
             display: none !important;
         }
@@ -288,13 +289,23 @@
         <div class="modal-content">
             <strong>Book Your Appointment</strong>
             <span class="close">&times;</span>
-            <form target="_blank">
-                <p><input class="car-input car-border" type="text" id="txtname" placeholder="Name" required name="Name"></p>
-                <p><input class="car-input car-border" type="text" id="txtemail" placeholder="Email" required name="Email"></p>
-                <p><input class="car-input car-border" type="date" id="txtdate" placeholder="Date" required name="Date"></p>
+            <form onSubmit="return formreturnfalse()">
+                <p>
+                    <label id="nameLabel" for="name"><span class="visually-hidden">name</span></label>
+                    <input class="car-input car-border" aria-labelledby="nameLabel" type="text" id="txtname" placeholder="Name" required name="Name">
+                </p>
+                <p>
+                    <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
+                    <input class="car-input car-border" aria-labelledby="emailLabel" type="text" id="txtemail" placeholder="Email" required name="Email">
+                </p>
+                <p>
+                    <label id="dateLabel" for="date"><span class="visually-hidden">date</span></label>
+                    <input class="car-input car-border" aria-labelledby="dateLabel" type="date" id="txtdate" placeholder="Date" required name="Date">
+                </p>
 
                 <p>
-                    <select id="ddlcarsize" class="car-input car-border" required>
+                    <label id="carsizeLabel" for="carsize"><span class="visually-hidden">vehicle type</span></label>
+                    <select id="ddlcarsize" aria-labelledby="carsizeLabel" class="car-input car-border" required>
                         <option>-Select Vehicle type-</option>
                         <option>Small Size Car</option>
                         <option>Medium Size Car</option>
@@ -302,7 +313,8 @@
                     </select>
                 </p>
                 <p>
-                    <select id="ddlservice" class="car-input car-border" required>
+                    <label id="serviceLabel" for="service"><span class="visually-hidden">service</span></label>
+                    <select id="ddlservice" aria-labelledby="serviceLabel" class="car-input car-border" required>
                         <option>-Select Service-</option>
                         <option>VIP Wash</option>
                         <option>Polish + Ceramic Coatings</option>
@@ -313,8 +325,9 @@
                     </select>
                 <p>
                 <p>
-                    <select id="ddladdon" class="car-input car-border" required>
-                        <option>-Select Add-OnOption-</option>
+                    <label id="addonLabel" for="Add-on Option"><span class="visually-hidden">Add-on Option</span></label>
+                    <select id="ddladdon" aria-labelledby="addonLabel" class="car-input car-border" required>
+                        <option>-Select Add-On Option-</option>
                         <option>Soft top clean & Protect £90.00</option>
                         <option>Body wax  £10.00</option>
                         <option>HD bodywax £55.00</option>
@@ -322,7 +335,10 @@
                         <option>Machine Polish £120.00</option>
                     </select>
                 </p>
-                <p><textarea class="car-input car-border" id="txtmessage" placeholder="Message" required name="Message"></textarea></p>
+                <p>
+                    <label id="addonmessageLabel" for="Message"><span class="visually-hidden">Message</span></label>
+                    <textarea class="car-input car-border" aria-labelledby="addonmessageLabel" id="txtmessage" placeholder="Message" required name="Message"></textarea>
+                </p>
                 <p>
                     <button class="car-button car-black" type="submit">
                         <i class="fa fa-paper-plane"></i> Book Appointment
