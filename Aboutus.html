@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>About us | Car Wash</title>
     <meta charset="UTF-8">
@@ -27,6 +27,9 @@
             background-size: cover;
             background-image: url("Images/header/header_06.jpg");
             min-height: 70%;
+        }
+        #chat-bot-message-container.slide-in {
+            display: none !important;
         }
     </style>
 </head>
@@ -69,12 +72,12 @@
     <!-- Header with full-height image -->
     <header class="bgimg-1 car-display-container car-grayscale-min" id="about">
         <div class="car-display-middle car-text-white car-margin-top car-center">
-                <span class="car-xxxlarge car-hide-small car-wide"><span class="car-padding car-black car-opacity-min">ABOUT US</span></span>
+            <span class="car-xxxlarge car-hide-small car-wide"><span class="car-padding car-black car-opacity-min">ABOUT US</span></span>
         </div>
     </header>
 
     <!-- About Section -->
-    <div class="car-container car-padding-64" >
+    <div class="car-container car-padding-64">
         <p class="car-center car-large car-web-red"><b><i>Who Is Southern Car Wash</i></b></p>
         <p class="car-center">
             Here at the Southern Car Wash our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service, we strive to provide exceptional results at an attainable price. With our use of the latest technology and the industry’s best materials, you can rest assured that we will give your vehicle the best care possible.
@@ -139,10 +142,24 @@
             <div class="car-col m6">
 
                 <form action="/action_page.html" target="_blank">
-                    <p><input class="car-input car-border" type="text" placeholder="name" required name="name"></p>
-                    <p><input class="car-input car-border" type="text" placeholder="email" required name="email"></p>
-                    <p><input class="car-input car-border" type="text" placeholder="subject" required name="subject"></p>
-                    <p><textarea class="car-input car-border" placeholder="message" required name="message" rows="5"></textarea></p>
+                    <p>
+                        <label id="nameLabel" for="name"><span class="visually-hidden">name</span></label>
+                        <input id="txtname" aria-labelledby="nameLabel" class="car-input car-border" type="text" placeholder="name" required name="txtname">
+                    </p>
+                    <p>
+                        <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
+
+                        <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="text" placeholder="email" required name="txtemail">
+                    </p>
+                    <p>
+                        <label id="subjectLabel" for="subject"><span class="visually-hidden">subject</span></label>
+
+                        <input id="txtsubject" aria-labelledby="subjectLabel" class="car-input car-border" type="text" placeholder="subject" required name="txtsubject">
+                    </p>
+                    <p>
+                        <label id="messageLabel" for="message"><span class="visually-hidden">message</span></label>
+                        <textarea id="txtmessage" aria-labelledby="messageLabel" class="car-input car-border" placeholder="message" required name="txtmessage" rows="5"></textarea>
+                    </p>
                     <p>
                         <button class="car-button car-black" type="submit">
                             <i class="fa fa-paper-plane"></i> send message
@@ -168,8 +185,8 @@
     </div>
 
 
-       <!-- Footer -->
-       <footer class="car-black car-row-padding faq-heading">
+    <!-- Footer -->
+    <footer class="car-black car-row-padding faq-heading">
         <div class="car-col l5">
             <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Car Wash">
             <p>
@@ -202,7 +219,9 @@
                 Sign up to our newsletter
             </p>
             <div class="car-col m8 car-padding-16">
-                <input type="email" value="" name="EMAIL" class="car-input car-border" placeholder="Your Email...">
+                <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
+                <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email" placeholder="Your Email..." required name="txtemail">
+
             </div>
             <div class="car-col m4 car-padding-16">
                 <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
@@ -210,10 +229,10 @@
 
 
             <div class="car-xlarge car-section car-wide">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
+                <a href="https://www.facebook.com/" aria-label="first link" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" aria-label="second link" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" aria-label="third link" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" aria-label="fourth link" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
             </div>
 
             <h5>JOIN WITH US</h5>
@@ -251,7 +270,7 @@
         function FlashCar_Close() {
             mySidebar.style.display = "none";
         }
-        (function(w, d) { w.CollectId = "64111468bddfe03b3a3cfa82"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
+        (function (w, d) { w.CollectId = "64111468bddfe03b3a3cfa82"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);
     </script>
 
 </body>
