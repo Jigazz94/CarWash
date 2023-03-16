@@ -4,12 +4,10 @@
     <title>Privacy-Policy | Car Wash</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="icon" type="images/x-icon" href="./Images/favicon.png" />
+    <link rel="stylesheet" href="Style\style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="Style\style.css">
     <style>
         body, h1, h2, h3, h4, h5, h6 {
             font-family: "Raleway", sans-serif
@@ -23,40 +21,161 @@
 </head>
 <body>
 
-    <div class="car-container">
-        <h1 class="car-center">Privacy Policy</h1>
-        <p>This privacy policy outlines how we collect, use, and protect personal information from our customers at our car wash service.</p>
+    <!-- Navbar (sit on top) -->
+    <div class="car-top">
+        <div class="car-bar car-black car-card" id="myNavbar">
+            <a href="./index.html" class="car-bar-item car-wide"> <img src="./Images/logo.png" style="width:135px; height:auto;" alt="Southern Car Wash"> </a>
+            <!-- Right-sided navbar links -->
+            <div class="car-right car-hide-small">
+                <a href="./index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i> SERVICE</a>
+                <a href="./Booking.html" target="_self" class="car-bar-item car-button"><i class="fa fa-gbp"></i> BOOKING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i> GALLERY</a>
+                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i> FAQs</a>
+                <a href="./Contact.html" target="_self" class="car-bar-item car-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <h3>Information collection:</h3>
-        <p>
-            We may collect your personal information, such as name, email address, phone number, and car registration number when you visit our car wash or book an appointment online.
-            We may also collect non-personal information, such as the type of car, its make, model, and color.
-        </p>
-
-        <h3>Information use:</h3>
-        <p>
-            We use the personal information we collect to schedule appointments, process payments, and communicate with our customers about their car wash needs.
-            We may also use the non-personal information we collect to track usage patterns, improve customer service, and enhance our marketing efforts.
-        </p>
-
-        <h3>Information protection:</h3>
-        <p>
-            We take appropriate measures to protect your personal information from unauthorized access, disclosure, or modification. We have implemented strict physical, electronic, and administrative controls to safeguard your data.
-            We will not sell, rent, or share your personal information with any third party unless required by law.
-        </p>
-
-        <h3>Information retention:</h3>
-        <p>
-            We retain your personal information as long as necessary to fulfill the purpose for which it was collected or as required by law.
-            We reserve the right to delete any unnecessary information at any time.
-        </p>
-
-        <h3>Policy updates:</h3>
-        <p>We may update this privacy policy from time to time without notice. The latest version of the policy will be available on our website.</p>
-
-        <h3>Contact information:</h3>
-        <p>If you have any questions or concerns regarding this privacy policy, please contact us at (+44) 7397553729.</p>
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="FlashCar_Open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="FlashCar_Close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+        <a href="./index.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="FlashCar_Close()" class="car-bar-item car-button">ABOUT US</a>
+        <a href="./Service.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> SERVICE</a>
+        <a href="./Booking.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> BOOKING</a>
+        <a href="./Gallery.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> FAQs</a>
+        <a href="./Contact.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> CONTACT</a>
+    </nav>
+
+    <div class="car-container car-padding-64" id="privacy">
+        <div class="car-row-padding">
+            <h1 class="car-center car-padding-16">Privacy Policy</h1>
+            <p>This privacy policy outlines how we collect, use, and protect personal information from our customers at our car wash service.</p>
+
+            <h3>Information collection:</h3>
+            <p>
+                We may collect your personal information, such as name, email address, phone number, and car registration number when you visit our car wash or book an appointment online.
+                We may also collect non-personal information, such as the type of car, its make, model, and color.
+            </p>
+
+            <h3>Information use:</h3>
+            <p>
+                We use the personal information we collect to schedule appointments, process payments, and communicate with our customers about their car wash needs.
+                We may also use the non-personal information we collect to track usage patterns, improve customer service, and enhance our marketing efforts.
+            </p>
+
+            <h3>Information protection:</h3>
+            <p>
+                We take appropriate measures to protect your personal information from unauthorized access, disclosure, or modification. We have implemented strict physical, electronic, and administrative controls to safeguard your data.
+                We will not sell, rent, or share your personal information with any third party unless required by law.
+            </p>
+
+            <h3>Information retention:</h3>
+            <p>
+                We retain your personal information as long as necessary to fulfill the purpose for which it was collected or as required by law.
+                We reserve the right to delete any unnecessary information at any time.
+            </p>
+
+            <h3>Policy updates:</h3>
+            <p>We may update this privacy policy from time to time without notice. The latest version of the policy will be available on our website.</p>
+
+            <h3>Contact information:</h3>
+            <p>If you have any questions or concerns regarding this privacy policy, please contact us at (+44) 7397553729.</p>
+        </div>
+    </div>
+    <footer class="car-black car-row-padding faq-heading">
+        <div class="car-col l5">
+            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Car Wash">
+            <p>
+                Here at the Southern Car Wash, our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+                we strive to provide exceptional results at an attainable price.
+            </p>
+            <p>
+                © Southern Car Wash LTD<br />
+                All rights reserved.
+            </p>
+        </div>
+        <div class="car-col l2">
+            <p><strong>Service</strong></p>
+            <p><a href="/Service.html" target="_blank">VIP Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Full Detailing</a></p>
+            <p><a href="/Service.html" target="_blank">Polish + Ceramic Coatings</a></p>
+            <p><a href="/Service.html" target="_blank">Inside and Outside Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Outside Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Inside Clean</a></p>
+            <p><a href="/Service.html" target="_blank">Quick Flash Wash</a></p>
+            <p><a href="/Faqs.html" target="_blank"> FAQ</a></p>
+        </div>
+        <div class="car-col l2">
+            <p><strong>Legal</strong></p>
+            <p><a href="/Terms-Condition.html" target="_blank">Terms & Conditions</a></p>
+            <p><a href="/Privacy-Policy.html" target="_blank">Privacy Policy</a></p>
+        </div>
+        <div class="car-col l3">
+            <p>
+                Sign up to our newsletter
+            </p>
+            <div class="car-col m8 car-padding-16">
+                <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
+                <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email" placeholder="Your Email..." required name="txtemail">
+
+            </div>
+
+            <div class="car-col m4 car-padding-16">
+                <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
+            </div>
+
+
+            <div class="car-xlarge car-section car-wide">
+                <a href="https://www.facebook.com/" aria-label="first link" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" aria-label="second link" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" aria-label="third link" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" aria-label="fourth link" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
+            </div>
+
+            <h5>JOIN WITH US</h5>
+
+            <div class="car-col 15">
+                <div class="car-col m6">
+                    <a href="https://www.apple.com/uk/store" target="_blank"><img src="./Images/App_store.png" style="height:35px; width:120px;" alt="App Store"></a>
+                </div>
+                <div class="car-col m6">
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="./Images/Play_store.png" style="height:35px; width:120px;" alt="Play Store"></a>
+                </div>
+            </div>
+
+            <div class="car-col m6 car-padding-32">
+                <a href="#privacy" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function FlashCar_Open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function FlashCar_Close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
 
 </body>
 </html>

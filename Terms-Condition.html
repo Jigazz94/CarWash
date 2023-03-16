@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Terms & Conditions | Car Wash</title>
+    <title>Terms & Conitions | Car Wash</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="icon" type="images/x-icon" href="./Images/favicon.png" />
+    <link rel="stylesheet" href="Style\style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="Style\style.css">
     <style>
         body, h1, h2, h3, h4, h5, h6 {
             font-family: "Raleway", sans-serif
@@ -23,46 +21,166 @@
 </head>
 <body>
 
-    <div class="car-container">
-        <h1 class="car-center">Terms & Conitions</h1>
-        <h3>1. Service Availability:</h3>
+    <!-- Navbar (sit on top) -->
+    <div class="car-top">
+        <div class="car-bar car-black car-card" id="myNavbar">
+            <a href="./index.html" class="car-bar-item car-wide"> <img src="./Images/logo.png" style="width:135px; height:auto;" alt="Southern Car Wash"> </a>
+            <!-- Right-sided navbar links -->
+            <div class="car-right car-hide-small">
+                <a href="./index.html" target="_self" class="car-bar-item car-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="./Aboutus.html" target="_self" class="car-bar-item car-button"><i class="fa fa-info"></i> ABOUT US</a>
+                <a href="./Service.html" target="_self" class="car-bar-item car-button"><i class="fa fa-wrench"></i> SERVICE</a>
+                <a href="./Booking.html" target="_self" class="car-bar-item car-button"><i class="fa fa-gbp"></i> BOOKING</a>
+                <a href="./Gallery.html" target="_self" class="car-bar-item car-button"><i class="fa fa-user-o"></i> GALLERY</a>
+                <a href="./Faqs.html" target="_self" class="car-bar-item car-button"><i class="fa fa-question-circle"></i> FAQs</a>
+                <a href="./Contact.html" target="_self" class="car-bar-item car-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <p>Our car wash services are available during operating hours as specified on our website or at the physical location. We reserve the right to refuse service for any reason or to stop serving customers due to circumstances beyond our control.</p>
-
-        <h3>2. Service Charges:</h3>
-
-        <p>The charges for our car wash services will be as per the rates mentioned on our website or displayed in the physical location. These rates are subject to change without prior notice.</p>
-
-        <h3>3. Payment:</h3>
-
-        <p>We accept payment in cash, credit card or through any other mode mentioned on our website or displayed in the physical location. Payment must be made at the time of availing our car wash services.</p>
-
-        <h3>4. Refunds:</h3>
-
-        <p>If you are unhappy with our services, please bring it to our notice immediately. We will do our best to rectify the problem. However, we do not offer refunds for services already rendered.</p>
-
-        <h3>5. Damage Liability:</h3>
-
-        <p>We take utmost care while washing your vehicle. However, we will not be liable for any damage caused to your vehicle due to pre-existing conditions or defects. In case of any damage caused by us, we will compensate up to the maximum liability limit mentioned on our website or displayed in the physical location.</p>
-
-        <h3>6. Limited Liability:</h3>
-
-        <p>We will not be liable for any loss or damage caused to your vehicle or any personal property left inside the vehicle. We advise you to remove all personal belongings from your vehicle before availing our car wash services.</p>
-
-        <h3>7. Health and Safety:</h3>
-
-        <p>We maintain high standards of health and safety for our customers and staff. Please follow our instructions and guidelines while availing our car wash services.</p>
-
-        <h3>8. Amendments:</h3>
-
-        <p> We reserve the right to amend these terms and conditions at any time without prior notice. The latest version of the terms and conditions will always be available on our website and in the physical location.</p>
-
-        <h3>9. Governing Law:</h3>
-
-        <p>These terms and conditions will be governed by and construed in accordance with the laws of the country where our car wash services are provided. Any dispute arising out of these terms and conditions will be subject to the exclusive jurisdiction of the courts of that country.</p>
-
-        <p>By availing our car wash services, you agree to these terms and conditions.</p>
+            <a href="javascript:void(0)" class="car-bar-item car-button car-right car-hide-large car-hide-medium" onclick="FlashCar_Open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
 
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="car-sidebar car-bar-block car-black car-card car-animate-left car-hide-medium car-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="FlashCar_Close()" class="car-bar-item car-button car-large car-padding-16">Close ×</a>
+        <a href="./index.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> HOME</a>
+        <a href="./Aboutus.html" onclick="FlashCar_Close()" class="car-bar-item car-button">ABOUT US</a>
+        <a href="./Service.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> SERVICE</a>
+        <a href="./Booking.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> BOOKING</a>
+        <a href="./Gallery.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> GALLERY</a>
+        <a href="./Faqs.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> FAQs</a>
+        <a href="./Contact.html" onclick="FlashCar_Close()" class="car-bar-item car-button"> CONTACT</a>
+    </nav>
+
+    <div class="car-container car-padding-64" id="terms">
+        <div class="car-row-padding">
+            <h1 class="car-center car-padding-16">Terms & Conitions</h1>
+            <h3>1. Service Availability:</h3>
+
+            <p>Our car wash services are available during operating hours as specified on our website or at the physical location. We reserve the right to refuse service for any reason or to stop serving customers due to circumstances beyond our control.</p>
+
+            <h3>2. Service Charges:</h3>
+
+            <p>The charges for our car wash services will be as per the rates mentioned on our website or displayed in the physical location. These rates are subject to change without prior notice.</p>
+
+            <h3>3. Payment:</h3>
+
+            <p>We accept payment in cash, credit card or through any other mode mentioned on our website or displayed in the physical location. Payment must be made at the time of availing our car wash services.</p>
+
+            <h3>4. Refunds:</h3>
+
+            <p>If you are unhappy with our services, please bring it to our notice immediately. We will do our best to rectify the problem. However, we do not offer refunds for services already rendered.</p>
+
+            <h3>5. Damage Liability:</h3>
+
+            <p>We take utmost care while washing your vehicle. However, we will not be liable for any damage caused to your vehicle due to pre-existing conditions or defects. In case of any damage caused by us, we will compensate up to the maximum liability limit mentioned on our website or displayed in the physical location.</p>
+
+            <h3>6. Limited Liability:</h3>
+
+            <p>We will not be liable for any loss or damage caused to your vehicle or any personal property left inside the vehicle. We advise you to remove all personal belongings from your vehicle before availing our car wash services.</p>
+
+            <h3>7. Health and Safety:</h3>
+
+            <p>We maintain high standards of health and safety for our customers and staff. Please follow our instructions and guidelines while availing our car wash services.</p>
+
+            <h3>8. Amendments:</h3>
+
+            <p> We reserve the right to amend these terms and conditions at any time without prior notice. The latest version of the terms and conditions will always be available on our website and in the physical location.</p>
+
+            <h3>9. Governing Law:</h3>
+
+            <p>These terms and conditions will be governed by and construed in accordance with the laws of the country where our car wash services are provided. Any dispute arising out of these terms and conditions will be subject to the exclusive jurisdiction of the courts of that country.</p>
+
+            <p>By availing our car wash services, you agree to these terms and conditions.</p>
+        </div>
+    </div>
+    <footer class="car-black car-row-padding faq-heading">
+        <div class="car-col l5">
+            <img class="car-padding-16" src="./Images/logo.png" style="width:180px; height:auto;" alt="Southern Car Wash">
+            <p>
+                Here at the Southern Car Wash, our number one priority is customer satisfaction. We are passionate and driven by customer service and top-class service,
+                we strive to provide exceptional results at an attainable price.
+            </p>
+            <p>
+                © Southern Car Wash LTD<br />
+                All rights reserved.
+            </p>
+        </div>
+        <div class="car-col l2">
+            <p><strong>Service</strong></p>
+            <p><a href="/Service.html" target="_blank">VIP Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Full Detailing</a></p>
+            <p><a href="/Service.html" target="_blank">Polish + Ceramic Coatings</a></p>
+            <p><a href="/Service.html" target="_blank">Inside and Outside Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Outside Wash</a></p>
+            <p><a href="/Service.html" target="_blank">Inside Clean</a></p>
+            <p><a href="/Service.html" target="_blank">Quick Flash Wash</a></p>
+            <p><a href="/Faqs.html" target="_blank"> FAQ</a></p>
+        </div>
+        <div class="car-col l2">
+            <p><strong>Legal</strong></p>
+            <p><a href="/Terms-Condition.html" target="_blank">Terms & Conditions</a></p>
+            <p><a href="/Privacy-Policy.html" target="_blank">Privacy Policy</a></p>
+        </div>
+        <div class="car-col l3">
+            <p>
+                Sign up to our newsletter
+            </p>
+            <div class="car-col m8 car-padding-16">
+                <label id="emailLabel" for="email"><span class="visually-hidden">email</span></label>
+                <input id="txtemail" aria-labelledby="emailLabel" class="car-input car-border" type="email" placeholder="Your Email..." required name="txtemail">
+
+            </div>
+
+            <div class="car-col m4 car-padding-16">
+                <a href="#" class="car-button car-light-grey" style="padding-top: 10px;"><i class="fa fa-arrow-up car-margin-right"></i>Subscribe</a>
+            </div>
+
+
+            <div class="car-xlarge car-section car-wide">
+                <a href="https://www.facebook.com/" aria-label="first link" target="_blank"><i class="fa fa-facebook-official car-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/" aria-label="second link" target="_blank"><i class="fa fa-instagram car-hover-opacity"></i></a>
+                <a href="https://www.twitter.com/" aria-label="third link" target="_blank"><i class="fa fa-twitter car-hover-opacity"></i></a>
+                <a href="https://www.youtube.com/" aria-label="fourth link" target="_blank"><i class="fa fa-youtube car-hover-opacity"></i></a>
+            </div>
+
+            <h5>JOIN WITH US</h5>
+
+            <div class="car-col 15">
+                <div class="car-col m6">
+                    <a href="https://www.apple.com/uk/store" target="_blank"><img src="./Images/App_store.png" style="height:35px; width:120px;" alt="App Store"></a>
+                </div>
+                <div class="car-col m6">
+                    <a href="https://play.google.com/store/apps" target="_blank"><img src="./Images/Play_store.png" style="height:35px; width:120px;" alt="Play Store"></a>
+                </div>
+            </div>
+
+            <div class="car-col m6 car-padding-32">
+                <a href="#terms" class="car-button car-light-grey"><i class="fa fa-arrow-up car-margin-right"></i>To the top</a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function FlashCar_Open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function FlashCar_Close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
 </body>
 </html>
